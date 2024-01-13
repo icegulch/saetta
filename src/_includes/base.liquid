@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      {% if page.fileSlug == 'homepage' %}
+        {{ site.title }} | {{ site.description }}
+      {% elsif title %}
+        {{ title }} | {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+    <meta name="generator" content="{{ eleventy.generator }}">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% include "og.liquid" %}
+    {% include "site_icons.liquid" %}
+    {% capture css %}{% include "css/site.css" %}{% endcapture %}
+    <style>
+      {% if site.env == "production" %}
+        {{ css | cssmin }}
+      {% else %}
+        {{ css }}
+      {% endif %}
+    </style>
+  </head>
+  <body>
+
+    {% include "svg-sprite.liquid" %}
+
+    <header class="site-header content-grid" role="banner">
+      {% include "header" %}
+    </header>
+
+    <main class="site-main content-grid">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer content-grid">
+      {% include "footer" %}
+    </footer>
+
+  </body>
+</html>

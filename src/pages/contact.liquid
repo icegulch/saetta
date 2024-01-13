@@ -1,0 +1,50 @@
+---
+permalink: /contact/index.html
+title: Contact
+---
+
+<section class="content-grid">
+  <form
+    class="contact-form"
+    name="contact"
+    netlify-honeypot="fu"
+    action="/contact/thank-you/"
+    netlify>
+    <div hidden>
+      <label>Don’t fill this out: <input name="fu"></label>
+    </div>
+    <div class="form-field">
+      <label for="name">
+        Name
+      </label>
+      <input
+        id="name"
+        class="form-control"
+        type="text"
+        name="name">
+    </div>
+    <div class="form-field">
+      <label for="email">
+        Email
+      </label>
+      <input
+        id="email"
+        class="form-control"
+        type="email"
+        name="email">
+    </div>
+    <div class="form-field">
+      <label for="message">
+        Your message
+      </label>
+      <textarea
+        id="message"
+        class="form-control"
+        name="message"
+        rows="10"></textarea>
+    </div>
+    <button class="button-submit">
+      Send
+    </button>
+  </form>
+</section>

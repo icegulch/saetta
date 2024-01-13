@@ -1,0 +1,16 @@
+
+<div class="primary-header breakout">
+  <a href="/" class="brand">
+    {% include "logo" %}
+  </a>
+  <nav class="header-nav">
+    {% assign currentUrl =  page.url %}
+    {% assign allPages = 'Products,Library,About,Contact' | split: ',' %}
+    {% for item in allPages %}
+      {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}
+      <a href="{{ leSlug }}" {% if currentUrl == leSlug %}aria-current="page" {% endif %}>
+        {{ item }}
+      </a>
+    {%- endfor %}
+  </nav>
+</div>

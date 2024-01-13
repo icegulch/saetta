@@ -1,0 +1,9 @@
+[[redirects]]
+from = "https://:url/favicon/*"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_favicon/:url/:splat"
+status = 200
+
+[[redirects]]
+from = "/products/*"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_products/:url/:splat"
+status = 200
