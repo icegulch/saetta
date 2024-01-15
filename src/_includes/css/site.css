@@ -1,6 +1,7 @@
 :root {
   --clr-slate-050: #F8FAFC;
   --clr-slate-300: #CBD5E1;
+  --clr-slate-700: #334155;
   --clr-secondary: #286AA6;
   --clr-primary: #C20E0E;
   --clr-light-gray: #f2f6f9;
@@ -60,6 +61,8 @@ body {
 
 .site-footer {
   grid-area: footer;
+  background-color: var(--clr-slate-700);
+  color: white;
 }
 
 
@@ -319,4 +322,12 @@ body {
 
   display: grid;
   grid-template-columns: inherit;
+}
+
+
+.site-main img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
 }

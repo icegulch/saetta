@@ -1,0 +1,29 @@
+---
+backend:
+  name: git-gateway
+  branch: main
+
+show_preview_links: false
+
+media_folder: "src/images/" # Media files will be stored in the repo under static/images/
+public_folder: "/images/" # The src attribute for uploaded media will begin with /images/
+
+collections:
+  - name: pages
+    label: Pages
+    files:
+      - label: Homepage
+        name: homepage
+        delete: true
+        editor:
+          preview: false
+        file: src/_data/homepage.json
+        fields:
+          - label: Page Title
+            name: page_title
+            widget: string
+            required: true
+          - label: Page Tagline
+            name: page_tagline
+            widget: string
+            required: true

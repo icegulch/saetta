@@ -1,13 +1,25 @@
 ---
 permalink: /
-title: Foo
 ---
 
 <section class="full-width bg-hero">
   <h1>
-    Sapphire Loaded Cavity Oscillators
+    {{ homepage.page_heading }}
   </h1>
-  {% comment %} <svg>
-    <use xlink:href='#menu' />
-  </svg> {% endcomment %}
+  <p>
+    {{ homepage.page_subheading }}
+  </p>
+  <img src="{{ homepage.showcase_image }}" width="" height="" alt="">
+  <div class="homepage-ctas">
+    <a href="" class="btn btn-secondary">
+      Publications
+    </a>
+    <a href="" class="btn btn-primary">
+      Datasheets
+    </a>
+  </div>
+</section>
+
+<section class="">
+  {{ homepage.company_about | markdownify }}
 </section>

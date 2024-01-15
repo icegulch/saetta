@@ -1,0 +1,50 @@
+{
+  "page_heading": "Technical Resources for Low Phase Noise",
+  "publications": [
+    {
+      "entry": "Jason Breitbarth and Zoya Popovic, _Spectral performance and noise theory of nonlinear transmission line frequency multipliers_, 2017 Joint Conference of the European Frequency and Time Forum and IEEE International Frequency Control Symposium (EFTF/IFCS)."
+    },
+    {
+      "entry": "Jason Breitbarth, _An additive phase noise measurement technique for mixers with non-DC IF in large signal_, 2017 Joint Conference of the European Frequency and Time Forum and IEEE International Frequency Control Symposium (EFTF/IFCS)."
+    },
+    {
+      "entry": "Jason Breitbarth, Source impedance influence on cross-correlation phase noise measurements, 2013 Joint European Frequency and Time Forum & International Frequency Control Symposium (EFTF/IFC)."
+    },
+    {
+      "entry": "Milos Jankovic ; Jason Breitbarth ; Alan Brannon ; Zoya Popovic, Measuring Transistor Large-Signal Noise Figure for Low-Power and Low Phase-Noise Oscillator Design, IEEE Transactions on Microwave Theory and Techniques, 2008, Vol. 56, Issue: 7."
+    },
+    {
+      "entry": "Milos Jankovic ; Alan Brannon ; Jason Breitbarth ; Zoya Popovic, Design method for low-power, low phase noise voltage-controlled oscillators, 2007 European Microwave Integrated Circuit Conference."
+    },
+    {
+      "entry": "A. Brannon ; M. Jankovic ; J. Breitbarth ; Z. Popovic ; V. Gerginov ; V. Shah ; S. Knappe ; L. Hollberg ; J. Kitching, A Local Oscillator for Chip-Scale Atomic Clocks at NIST, 2006 IEEE International Frequency Control Symposium and Exposition."
+    },
+    {
+      "entry": "Jason Breitbarth ; Srdjan Pajic ; Narisi Wang ; Zoya Popovic, Additive Phase Noise in Linear and High-Efficiency X-Band Power Amplifiers, 2006 IEEE MTT-S International Microwave Symposium Digest."
+    },
+    {
+      "entry": "V. Gerginov ; S. Knappe ; P.D.D. Schwindt ; V. Shah ; L. Liew ; J. Moreland ; H.G. Robinson ; L. Hollberg ; J. Kitching ; A. Brannon ; J. Breitbarth ; Z. Popovic, Component-level demonstration of a microfabricated atomic frequency reference, Proceedings of the 2005 IEEE International Frequency Control Symposium and Exposition, 2005."
+    },
+    {
+      "entry": "A. Brannon ; J. Breitbarth ; Z. Popovic , A low-power, low phase noise local oscillator for chip-scale atomic clocks, IEEE MTT-S International Microwave Symposium Digest, 2005."
+    },
+    {
+      "entry": "J. Breitbarth ; D. Schmelzer, Absorptive near-Gaussian low pass filter design with applications in the time and frequency domain, 2004 IEEE MTT-S International Microwave Symposium Digest."
+    },
+    {
+      "entry": "Jason Breitbarth and Joe Koebel, Additive (Residual) Phase Noise Measurement of Amplifiers, Frequency Dividers and Frequency Multipliers, Microwave Journal, June 2008."
+    },
+    {
+      "entry": "Jason Breitbarth and Joe Koebel, Phase coherent multi-channel RF synthesis, Microwave Journal, May 2009."
+    },
+    {
+      "entry": "Jason Breitbarth, Cross Correlation in phase noise analysis, Microwave Journal, February 2011."
+    },
+    {
+      "entry": "Jason Breitbarth, Octave Tuning, High Frequency Varactor Oscillator Design. Masters Thesis, 2001, University of Colorado, Boulder."
+    },
+    {
+      "entry": "Jason Breitbarth, Design and Characterization of Low Phase Noise Microwave Circuits.  Ph.D. Thesis 2006, University of Colorado, Boulder."
+    }
+  ]
+}
