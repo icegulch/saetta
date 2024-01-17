@@ -69,6 +69,9 @@ collections:
       - label: Title
         name: title
         widget: string
+      - label: CMS Title
+        name: cms_title
+        widget: hidden
       - label: Description
         name: body
         widget: markdown
