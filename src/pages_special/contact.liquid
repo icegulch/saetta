@@ -3,10 +3,13 @@ permalink: /contact/index.html
 title: Contact
 ---
 
-<div class="container container--squeezed">
+<div class="container container--squeezed section section--simple">
   <h1>
-    Contact Us
+    {{ contactpage.page_heading }}
   </h1>
+  <article class="flow-content">
+    {{ contactpage.blurb | markdownify }}
+  </article>
   <form
     class="contact-form"
     name="contact"

@@ -41,5 +41,19 @@
       {% include "footer" %}
     </footer>
 
+    <script defer>
+        const body = document.body;
+        const toggleButton = document.getElementById('toggleButton');
+
+        toggleButton.addEventListener('click', function () {
+            if (body.classList.contains('mobile-menu-active')) {
+                body.classList.remove('mobile-menu-active');
+            } else {
+                body.classList.add('mobile-menu-active');
+            }
+        });
+
+    </script>
+
   </body>
 </html>
