@@ -64,6 +64,7 @@ collections:
     delete: false # Allow users to delete items in this collection
     editor:
       preview: false
+    summary: "{{cms_title}}"
     fields: # The fields for each document, usually in front matter
       - label: Title
         name: title
