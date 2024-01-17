@@ -23,7 +23,7 @@ collections:
             name: page_heading
             widget: string
             required: true
-          - label: Page Tagline
+          - label: Page Subheading
             name: page_subheading
             widget: string
             required: true
