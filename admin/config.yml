@@ -38,6 +38,21 @@ collections:
             name: page_heading
             widget: string
             required: true
+      - label: Contact
+        name: contact
+        delete: true
+        editor:
+          preview: false
+        file: src/_data/contactpage.json
+        fields:
+          - label: Page Title
+            name: page_heading
+            widget: string
+            required: true
+          - label: Blurb
+            name: blurb
+            widget: string
+            required: true
 
   - name: pages_generic
     label: Generic Pages
