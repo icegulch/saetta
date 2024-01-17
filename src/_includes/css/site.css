@@ -451,7 +451,7 @@ h1 {
   line-height: 1.4;
 }
 
-.flow-content *+* {
+.flow-content > * {
   margin-top: 1.5rem;
 }
 
@@ -473,4 +473,25 @@ h1 {
 
 .text-left {
   text-align: left;
+}
+
+.readmore a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--clr-secondary);
+  text-decoration: none;
+}
+
+.readmore svg {
+  width: 18px;
+  height: 18px;
+  fill: var(--clr-primary);
+}
+
+.readmore a:hover,
+.readmore a:focus,
+.readmore a:active {
+  text-decoration: underline;
 }

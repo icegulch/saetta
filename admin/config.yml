@@ -27,6 +27,7 @@ collections:
             name: page_subheading
             widget: string
             required: true
+
       - label: Products
         name: productspage
         delete: true
@@ -38,6 +39,28 @@ collections:
             name: page_heading
             widget: string
             required: true
+          - label: Products
+            label_singular: Product
+            name: products
+            widget: list
+            collapsed: true
+            minimize_collapsed: true
+            allow_add: true
+            add_to_top: true
+            summary: "{{title}}"
+            fields:
+              - { label: Product Title, name: title, widget: string }
+              - {
+                  label: Description,
+                  name: description,
+                  widget: markdown,
+                  minimal: true,
+                  buttons: [bold, italic, link],
+                  modes: [rich_text],
+                  editor_components: [],
+                  required: true,
+                }
+
       - label: Contact
         name: contact
         delete: true
