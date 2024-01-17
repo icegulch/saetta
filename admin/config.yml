@@ -20,10 +20,21 @@ collections:
         file: src/_data/homepage.json
         fields:
           - label: Page Title
-            name: page_title
+            name: page_heading
             widget: string
             required: true
           - label: Page Tagline
             name: page_tagline
+            widget: string
+            required: true
+      - label: Library
+        name: librarypage
+        delete: true
+        editor:
+          preview: false
+        file: src/_data/librarypage.json
+        fields:
+          - label: Page Title
+            name: page_heading
             widget: string
             required: true

@@ -1,0 +1,50 @@
+---
+permalink: /
+---
+
+<div class="section home-hero">
+  <div class="container container--squeezed">
+    <h1>
+      {{ homepage.page_heading }}
+    </h1>
+    <p>
+      {{ homepage.page_subheading }}
+    </p>
+    <img src="{{ homepage.showcase_image }}" width="1036" height="674" alt="">
+    <div class="homepage-ctas">
+      <a href="/library/" class="btn btn--secondary">
+        Publications
+        <svg>
+          <use xlink:href='#r-arrow' />
+        </svg>
+      </a>
+      <a href="/products/" class="btn btn--primary">
+        Datasheets
+        <svg>
+          <use xlink:href='#r-arrow' />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="section home-about">
+  <div class="container container--squeezed">
+    <div class="about-decor">
+      <svg>
+        <use xlink:href='#bolt' />
+      </svg>
+    </div>
+    <article class="flow-content">
+      {{ homepage.company_about | markdownify }}
+      <div>
+        <a href="/about/" class="btn btn--secondary btn--end">
+          Read more
+          <svg>
+            <use xlink:href='#r-arrow' />
+          </svg>
+        </a>
+      </div>
+    </article>
+  </div>
+</div>
