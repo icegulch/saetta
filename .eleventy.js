@@ -4,6 +4,11 @@ require('dotenv').config();
 const isProduction = process.env.ELEVENTY_ENV === `production`;
 
 module.exports = function (eleventyConfig) {
+
+  eleventyConfig.setServerOptions({
+    showAllHosts: true,
+  });
+
   eleventyConfig.addPassthroughCopy("./src/images");
 
   eleventyConfig.addFilter("cssmin", function (code) {
