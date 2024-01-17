@@ -24,7 +24,7 @@ collections:
             widget: string
             required: true
           - label: Page Tagline
-            name: page_tagline
+            name: page_subheading
             widget: string
             required: true
       - label: Products
