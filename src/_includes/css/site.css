@@ -177,8 +177,12 @@ body {
     flex-direction: row;
     gap: 2.55rem;
   }
+  .header-nav li:hover,
+  .header-nav li:focus {
+    box-shadow: 0 2px 0 0 var(--clr-gray);
+  }
   .header-nav li.active {
-    border-bottom: 2px solid var(--clr-primary);
+    box-shadow: 0 2px 0 0 var(--clr-primary);
   }
   .header-nav a {
     color: var(--clr-text);
