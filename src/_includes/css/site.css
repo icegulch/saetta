@@ -252,7 +252,7 @@ body {
 
 .home-hero {
   text-align: center;
-  background-image: linear-gradient(180deg, var(--clr-slate-050), var(--clr-slate-300));
+  background-color: var(--clr-light-gray);
 }
 
 .homepage-ctas {
@@ -498,15 +498,6 @@ h1 {
 
 .section {
   padding-block: 3rem;
-}
-
-.section--home {
-  padding-block: 1rem;
-}
-
-.section--simple {
-  display: grid;
-  gap: 1rem 0;
 }
 
 .site-main img {
