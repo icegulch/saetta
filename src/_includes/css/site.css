@@ -195,6 +195,9 @@ body {
 /* FOOTER */
 
 .primary-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   padding-block: 20px;
   line-height: 1.3;
 }
@@ -217,20 +220,30 @@ body {
   font-style: normal;
 }
 
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  gap: 2rem;
+}
+
 @media screen and (min-width: 768px) {
   .primary-footer {
-    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: start;
     padding-block: 20px;
   }
   .footer-nav {
     flex: 1;
-    display: flex;
-    flex-direction: row;
+    order: 2;
     justify-content: center;
-    gap: 2rem;
+  }
+  .primary-footer>address {
+    order: 1;
+  }
+  .primary-footer>div {
+    order: 3;
   }
 }
 
@@ -278,49 +291,29 @@ body {
 /* PRODUCTS */
 
 .even-columns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin-block: 3rem;
+}
+
+.even-columns h2 {
+  margin-top: 0;
 }
 
 @media screen and (min-width: 768px) {
   .even-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
+    flex-direction: row;
+    align-items: start;
   }
-
-  .even-columns--even {
-    grid-template-areas: 'figure article';
-    background-image: linear-gradient(94deg, var(--clr-light-gray) calc(50% + 4rem), white calc(50.5% + 4rem));
+  .even-columns--reversed {
+    flex-direction: row-reverse;
   }
-
-  .even-columns--odd {
-    grid-template-areas: 'article figure';
-    background-image: linear-gradient(94deg, white calc(50% - 4rem), var(--clr-light-gray) calc(50.5% - 4rem));
+  .even-columns+.even-columns {
+    margin-top: 40px;
   }
-
-  .even-columns>figure {
-    grid-area: figure;
-    height: 480px;
-  }
-
-  .even-columns>article {
-    grid-area: article;
-    padding-block: 2rem;
-  }
-
-  .even-columns h2 {
-    margin-top: 0;
-  }
-}
-
-/* REMOVE */
-@media screen and (max-width: 767px) {
-  .even-columns>figure {
-    max-width: 100%;
-    margin-bottom: 1rem;
-    height: 250px;
-    background-color: var(--clr-light-gray);
+  .even-columns>* {
+    flex: 0 1 50%;
   }
 }
 
