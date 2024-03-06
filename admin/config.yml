@@ -43,8 +43,8 @@ collections:
             label_singular: Product
             name: products
             widget: list
-            collapsed: false
-            minimize_collapsed: true
+            collapsed: true
+            minimize_collapsed: false
             allow_add: true
             add_to_top: true
             summary: "{{title}}"
