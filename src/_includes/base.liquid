@@ -42,17 +42,13 @@
     </footer>
 
     <script defer>
-        const body = document.body;
-        const toggleButton = document.getElementById('toggleButton');
+        const primaryNav = document.querySelector('.header-nav');
+        const navToggle = document.querySelector('.mobile-nav-toggle');
 
-        toggleButton.addEventListener('click', function () {
-            if (body.classList.contains('mobile-menu-active')) {
-                body.classList.remove('mobile-menu-active');
-            } else {
-                body.classList.add('mobile-menu-active');
-            }
+        navToggle.addEventListener('click', () => {
+          const visibility = primaryNav.getAttribute('data-visible');
+          console.log(visibility);
         });
-
     </script>
 
   </body>

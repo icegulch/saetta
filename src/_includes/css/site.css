@@ -58,6 +58,7 @@ body {
   font-family: var(--ff-sans);
   text-rendering: optimizeSpeed;
   line-height: 1;
+  overflow-x: hidden;
 }
 
 .site-header {
@@ -69,6 +70,8 @@ body {
 }
 
 .site-footer {
+  margin-top: 6rem;
+  padding-block: 1.5rem 3rem;
   grid-area: footer;
   background-color: var(--clr-slate-700);
   color: white;
@@ -83,6 +86,14 @@ body {
 .brand svg {
   width: 200px;
   height: auto;
+}
+
+.header-nav {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  gap: 2.55rem;
 }
 
 .header-nav a {
@@ -103,16 +114,49 @@ body {
   border-bottom-color: var(--clr-primary);
 }
 
+@media screen and (max-width: 767px) {
+  .header-nav {
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 30%;
+    padding: min(30vh, 10rem) 2rem;
+    flex-direction: column;
+    background-color: steelblue;
+    transform: translateX(100%);
+  }
+  .header-nav[data-visible="true"] {
+    transform: translateX(0%);
+  }
+  .mobile-nav-toggle {
+    display: block;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .mobile-nav-toggle svg {
+    width: 32px;
+    height: 32px;
+    fill: var(--clr-slate-700);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .primary-header {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
   .header-nav {
-    display: flex;
-    gap: 2.55rem;
+    flex-direction: row;
+  }
+  .mobile-nav-toggle {
+    display: none;
   }
 }
 
@@ -431,6 +475,10 @@ h1 {
   padding-block: 3rem;
 }
 
+.section--home {
+  padding-block: 1rem;
+}
+
 .section--simple {
   display: grid;
   gap: 1rem 0;
@@ -494,4 +542,16 @@ h1 {
 .readmore a:focus,
 .readmore a:active {
   text-decoration: underline;
+}
+
+/* UTILITY */
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }

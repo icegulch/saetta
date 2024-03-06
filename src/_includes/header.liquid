@@ -3,14 +3,26 @@
   <a href="/" class="brand">
     {% include "logo" %}
   </a>
-  <nav class="header-nav">
-    {% assign currentUrl =  page.url %}
-    {% assign allPages = 'Products,Library,About,Contact' | split: ',' %}
-    {% for item in allPages %}
-      {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}
-      <a href="{{ leSlug }}" {% if currentUrl == leSlug %}aria-current="page" {% endif %}>
-        {{ item }}
-      </a>
-    {%- endfor %}
+
+  <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+    <svg>
+      <use xlink:href='#menu' />
+    </svg>
+    <span class="sr-only">Menu</span>
+  </button>
+
+  <nav>
+    <ul id="primary-navigation" data-visible="false" class="header-nav">
+      {% assign currentUrl =  page.url %}
+      {% assign allPages = 'Products,Library,About,Contact' | split: ',' %}
+      {% for item in allPages %}
+        {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}
+        <li {%- if currentUrl == leSlug %} class="active"{% endif %}>
+          <a href="{{ leSlug }}">
+            {{ item }}
+          </a>
+        </li>
+      {%- endfor %}
+    </ul>
   </nav>
 </div>
