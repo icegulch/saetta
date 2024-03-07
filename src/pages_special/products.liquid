@@ -3,26 +3,28 @@ permalink: /products/index.html
 title: Products
 ---
 
-<div class="container section">
-  {% for product in productspage.products %}
-    <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
-      <figure>
-        <img src="{{ product.photo }}">
-      </figure>
-      <article class="flow-content">
-        <h2>
-          {{ product.title }}
-        </h2>
-        {{ product.description | markdownify }}
-        <div class="readmore">
-          <a href="">
-            Datasheet
-            <svg>
-              <use xlink:href='#r-arrow' />
-            </svg>
-          </a>
-        </div>
-      </article>
-    </div>
-  {% endfor %}
-</div>
+<section class="section">
+  <div class="container spacing spacing--products">
+    {% for product in productspage.products %}
+      <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
+        <figure>
+          <img src="{{ product.photo }}">
+        </figure>
+        <article class="flow-content">
+          <h2>
+            {{ product.title }}
+          </h2>
+          {{ product.description | markdownify }}
+          <div class="readmore">
+            <a href="">
+              Datasheet
+              <svg>
+                <use xlink:href='#r-arrow' />
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    {% endfor %}
+  </div>
+</section>

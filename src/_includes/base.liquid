@@ -49,15 +49,18 @@
     </footer>
 
     <script defer>
+        const body = document.body;
         const primaryNav = document.querySelector('.header-nav');
         const navToggle = document.querySelector('.mobile-nav-toggle');
 
         navToggle.addEventListener('click', () => {
           const visibility = primaryNav.getAttribute('data-visible');
           if (visibility === "false") {
+            body.classList.add('mobile-menu-active');
             primaryNav.setAttribute('data-visible', true);
             navToggle.setAttribute('aria-expanded', true);
           } else if (visibility === "true") {
+            body.classList.remove('mobile-menu-active');
             primaryNav.setAttribute('data-visible', false);
             navToggle.setAttribute('aria-expanded', false);
           }
