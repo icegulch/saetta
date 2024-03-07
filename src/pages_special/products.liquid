@@ -1,16 +1,13 @@
 ---
 permalink: /products/index.html
-title: Sapphire Loaded Cavity Oscillators
+title: Products
 ---
 
 <div class="container section">
-  <h1 class="text-center">
-    {{ productspage.page_heading }}
-  </h1>
   {% for product in productspage.products %}
     <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
       <figure>
-        <img src="/images/oscillator.jpeg">
+        <img src="{{ product.photo }}">
       </figure>
       <article class="flow-content">
         <h2>

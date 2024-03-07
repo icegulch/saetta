@@ -1,6 +1,6 @@
 ---
 permalink: /about/index.html
-title: Who We Are
+title: About
 cms_title: About
 ---
 

@@ -29,11 +29,18 @@
 
     {% include "svg-sprite.liquid" %}
 
-    <header class="site-header" role="banner">
+    <div class="site-header" role="banner">
       {% include "header" %}
-    </header>
+    </div>
 
     <main class="site-main">
+      {% unless page.url == '/' %}
+        <h1 class="page-title pattern-bg">
+          <div class="container container--squeezed">
+            {{ title }}
+          </div>
+        </h1>
+      {% endunless %}
       {{ content }}
     </main>
 
