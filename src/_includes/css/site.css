@@ -108,7 +108,7 @@ body {
   .mobile-menu-active {
     overflow: hidden;
   }
-  .mobile-menu-active>* {
+  .mobile-menu-active .brand, .mobile-menu-active>.site-main, .mobile-menu-active>.site-footer {
     pointer-events: none;
   }
   .header-nav {
