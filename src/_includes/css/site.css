@@ -362,6 +362,32 @@ body {
   }
 }
 
+.from-left {
+  -webkit-transform: translateX(-25%);
+  transform: translateX(-25%);
+}
+
+.from-right {
+  -webkit-transform: translateX(25%);
+  transform: translateX(25%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0.25;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
 
 /* PRODUCTS */
 
@@ -378,7 +404,7 @@ body {
 @media screen and (min-width: 768px) {
   .even-columns {
     flex-direction: row;
-    align-items: start;
+    align-items: center;
   }
   .even-columns--reversed {
     flex-direction: row-reverse;
