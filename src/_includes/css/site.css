@@ -80,7 +80,12 @@ body {
 
 /* PRIMARY HEADER */
 .primary-header {
+  position: relative;
   padding-block: 1rem;
+}
+
+.brand {
+  display: block;
 }
 
 .brand svg {
@@ -140,12 +145,13 @@ body {
   .mobile-nav-toggle {
     display: block;
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 50%;
+    right: 1.5rem;
     z-index: 9999;
     width: 32px;
     height: 32px;
     background-color: transparent;
+    transform: translateY(-50%);
     border: none;
     cursor: pointer;
   }
@@ -382,8 +388,8 @@ body {
     opacity: 0.25;
   }
 
-  .from-left.appear,
-  .from-right.appear {
+  .appear > .from-left,
+  .appear > .from-right {
     -webkit-transform: translateX(0);
     transform: translateX(0);
     opacity: 1;
@@ -405,7 +411,7 @@ body {
 @media screen and (min-width: 768px) {
   .even-columns {
     flex-direction: row;
-    align-items: center;
+    align-items: start;
   }
   .even-columns--reversed {
     flex-direction: row-reverse;

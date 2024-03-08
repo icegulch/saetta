@@ -6,11 +6,11 @@ title: Products
 <section class="section">
   <div class="container spacing spacing--products">
     {% for product in productspage.products %}
-      <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
-        <figure class="slide-in from-{% cycle 'right', 'left' %}">
+      <div class="even-columns even-columns--{% cycle 'default', 'reversed' %} slide-in">
+        <figure class="from-{% cycle 'right', 'left' %}">
           <img src="{{ product.photo }}">
         </figure>
-        <article class="slide-in from-{% cycle 'right', 'left' %} flow-content">
+        <article class="from-{% cycle 'right', 'left' %} flow-content">
           <h2>
             {{ product.title }}
           </h2>
