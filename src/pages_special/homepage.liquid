@@ -3,30 +3,32 @@ permalink: /
 ---
 
 <section class="section pattern-bg">
-  <div class="container container--squeezed flow-content">
-    <hgroup>
-      <h1>
-        {{ homepage.page_heading }}
-      </h1>
-      <p>
-        {{ homepage.page_subheading }}
-      </p>
-    </hgroup>
-    <img src="{{ homepage.showcase_image }}" width="1036" height="674" alt="">
-    <div class="homepage-ctas">
-      <a href="/library/" class="btn btn--secondary">
-        Publications
-        <svg>
-          <use xlink:href='#r-arrow' />
-        </svg>
-      </a>
-      <a href="/products/" class="btn btn--primary">
-        Datasheets
-        <svg>
-          <use xlink:href='#r-arrow' />
-        </svg>
-      </a>
-    </div>
+  <div class="container">
+    <article class="home-hero">
+      <img class="fade-in-left" src="{{ homepage.showcase_image }}" width="1036" height="674" alt="">
+      <hgroup class="fade-in-right">
+        <h1 style="font-size:2rem;margin-bottom:0.25rem">
+          {{ homepage.page_heading }}
+        </h1>
+        <p>
+          {{ homepage.page_subheading }}
+        </p>
+        <div class="homepage-ctas">
+          <a href="/library/" class="btn btn--secondary">
+            Publications
+            <svg>
+              <use xlink:href='#r-arrow' />
+            </svg>
+          </a>
+          <a href="/products/" class="btn btn--primary">
+            Datasheets
+            <svg>
+              <use xlink:href='#r-arrow' />
+            </svg>
+          </a>
+        </div>
+      </hgroup>
+    </article>
   </div>
 </section>
 
