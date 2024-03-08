@@ -417,7 +417,7 @@ body {
     flex-direction: row-reverse;
   }
   .even-columns {
-    margin-top: 60px;
+    margin-top: 3rem;
   }
   .even-columns>* {
     flex: 0 1 50%;
