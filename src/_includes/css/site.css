@@ -310,84 +310,85 @@ body {
   margin-bottom: 2rem;
 }
 
-.fade-in-left {
-  animation: fadeInLeft 0.5s;
-}
+@media screen and (min-width: 768px) {
+  .fade-in-left {
+    animation: fadeInLeft 0.5s;
+  }
 
-@keyframes fadeInLeft {
-  from {
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0.25;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+    
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  .fade-in-right {
+    animation: fadeInRight 0.5s;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0.25;
+      -webkit-transform: translateX(50%);
+      transform: translateX(50%);
+    }
+
+    to {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
+    }
+  }
+
+  .fade-in-all {
+    animation: fadeIn 0.5s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0.25;
+      transform: rotateY(-10deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: rotateY(0deg);
+    }
+  }
+
+  .from-left {
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
+  }
+
+  .from-right {
+    -webkit-transform: translateX(25%);
+    transform: translateX(25%);
+  }
+
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
     opacity: 0.25;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
   }
-  
-  to {
+
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
   }
 }
-
-.fade-in-right {
-  animation: fadeInRight 0.5s;
-}
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0.25;
-    -webkit-transform: translateX(50%);
-    transform: translateX(50%);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0%);
-    transform: translateX(0%);
-  }
-}
-
-.fade-in-all {
-  animation: fadeIn 0.5s;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0.25;
-    transform: rotateY(-10deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: rotateY(0deg);
-  }
-}
-
-.from-left {
-  -webkit-transform: translateX(-25%);
-  transform: translateX(-25%);
-}
-
-.from-right {
-  -webkit-transform: translateX(25%);
-  transform: translateX(25%);
-}
-
-.from-left,
-.from-right {
-  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in,
-    -webkit-transform 400ms ease-in;
-  opacity: 0.25;
-}
-
-.from-left.appear,
-.from-right.appear {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
-}
-
 
 /* PRODUCTS */
 
