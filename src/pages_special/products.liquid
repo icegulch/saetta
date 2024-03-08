@@ -4,13 +4,13 @@ title: Products
 ---
 
 <section class="section">
-  <div class="container spacing spacing--products">
+  <div class="container spacing spacing--products fade-in-all">
     {% for product in productspage.products %}
-      <div class="even-columns even-columns--{% cycle 'default', 'reversed' %} slide-in">
-        <figure class="from-{% cycle 'right', 'left' %}">
+      <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
+        <figure>
           <img src="{{ product.photo }}">
         </figure>
-        <article class="from-{% cycle 'right', 'left' %} flow-content">
+        <article class="flow-content">
           <h2>
             {{ product.title }}
           </h2>
