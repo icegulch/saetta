@@ -70,7 +70,6 @@ body {
 }
 
 .site-footer {
-  margin-top: 6rem;
   padding-block: 1.5rem 3rem;
   grid-area: footer;
   background-color: var(--clr-slate-700);
@@ -416,9 +415,6 @@ body {
   .even-columns--reversed {
     flex-direction: row-reverse;
   }
-  .even-columns {
-    margin-top: 3rem;
-  }
   .even-columns>* {
     flex: 0 1 50%;
   }
@@ -604,11 +600,20 @@ ol {
 /* REUSABLE */
 
 h1 {
+  font-size: 2rem;
   font-weight: 900;
   color: var(--clr-secondary);
 }
 
 .section {
+  padding-block: 3rem;
+}
+
+.section:last-of-type {
+  padding-bottom: 6rem;
+}
+
+.section--home {
   padding-block: 3rem;
 }
 
@@ -619,16 +624,21 @@ h1 {
   font-style: italic;
 }
 
+.flow-content > * {
+  margin-top: 1.5rem;
+}
+
+.flow-content>*:first-child {
+  margin-top: 0;
+}
+
 .flow-content p {
   line-height: 1.65;
 }
 
+
 .flow-content li {
   line-height: 1.4;
-}
-
-.flow-content > * {
-  margin-top: 1.5rem;
 }
 
 .flow-content h2 + p, .flow-content h3 + p, .flow-content h4 + p, .flow-content h5 + p, .flow-content h6 + p {
@@ -689,5 +699,5 @@ h1 {
 }
 
 .spacing--products {
-  gap: 2rem 0;
+  gap: 4rem 0;
 }
