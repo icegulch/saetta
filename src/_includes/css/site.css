@@ -409,8 +409,8 @@ body {
   .even-columns--reversed {
     flex-direction: row-reverse;
   }
-  .even-columns+.even-columns {
-    margin-top: 40px;
+  .even-columns {
+    margin-top: 60px;
   }
   .even-columns>* {
     flex: 0 1 50%;
