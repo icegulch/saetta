@@ -82,6 +82,11 @@ collections:
                   editor_components: [],
                   required: true,
                 }
+              - label: Photo
+                name: photo
+                widget: image
+                allow_multiple: false
+                choose_url: false
 
       - label: Library
         name: library
