@@ -1,17 +1,17 @@
 ---
-permalink: /
+layout: base
 ---
-
+  
 <section class="section section--home pattern-bg">
   <div class="container">
     <article class="home-hero">
-      <img class="fade-in-left" src="{{ homepage.showcase_image }}" width="1036" height="674" alt="">
+      <img class="fade-in-left" src="{{ showcase_image }}" width="1036" height="674" alt="">
       <hgroup class="fade-in-right">
         <h1 style="font-size:2rem;margin-bottom:0.25rem">
-          {{ homepage.page_heading }}
+          {{ page_heading }}
         </h1>
         <p>
-          {{ homepage.page_subheading }}
+          {{ page_subheading }}
         </p>
         <div class="homepage-ctas">
           <a href="/library/" class="btn btn--secondary">
@@ -40,7 +40,7 @@ permalink: /
       </svg>
     </div>
     <article class="flow-content">
-      {{ homepage.company_about | markdownify }}
+      {{ company_about | markdownify }}
       <div class="readmore">
         <a href="/about/">
           <span>

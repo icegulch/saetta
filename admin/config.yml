@@ -17,7 +17,7 @@ collections:
         delete: true
         editor:
           preview: false
-        file: src/_data/homepage.json
+        file: src/homepage.md
         fields:
           - label: Page Title
             name: page_heading
@@ -29,11 +29,11 @@ collections:
             required: true
 
       - label: Products
-        name: productspage
+        name: products
         delete: true
         editor:
           preview: false
-        file: src/_data/productspage.json
+        file: src/products.md
         fields:
           - label: Page Title
             name: page_heading
@@ -61,44 +61,92 @@ collections:
                   required: true,
                 }
 
-      - label: Contact
-        name: contact
+      - label: Library
+        name: library
         delete: true
         editor:
           preview: false
-        file: src/_data/contactpage.json
+        file: src/pages/library.md
         fields:
           - label: Page Title
             name: page_heading
             widget: string
             required: true
-          - label: Blurb
-            name: blurb
-            widget: string
+          - label: Body
+            name: body
+            widget: markdown
+            editor_components: []
+            modes: [rich_text]
             required: true
 
-  - name: pages_generic
-    label: Generic Pages
-    label_singular: Generic Page
-    folder: src/pages_generic/
-    slug: ""
-    extension: md
-    create: false # Allow users to create new documents in this collection
-    delete: false # Allow users to delete items in this collection
-    editor:
-      preview: false
-    summary: "{{cms_title}}"
-    fields: # The fields for each document, usually in front matter
-      - label: Title
-        name: title
-        widget: string
-      - label: CMS Title
-        name: cms_title
-        widget: hidden
-      - label: Description
-        name: body
-        widget: markdown
-        editor_components: []
-        modes: [rich_text]
-        required: true
-    sortable_fields: ["commit_date", "title"]
+      - label: About
+        name: about
+        delete: true
+        editor:
+          preview: false
+        file: src/pages/about.md
+        fields:
+          - label: Page Title
+            name: page_heading
+            widget: string
+            required: true
+          - label: Body
+            name: body
+            widget: markdown
+            editor_components: []
+            modes: [rich_text]
+            required: true
+
+      - label: Contact
+        name: contact
+        delete: true
+        editor:
+          preview: false
+        file: src/pages/contact.md
+        fields:
+          - label: Page Title
+            name: page_heading
+            widget: string
+            required: true
+          - label: Body
+            name: body
+            widget: markdown
+            editor_components: []
+            modes: [rich_text]
+            required: true
+
+      - label: Thank You
+        name: thanks
+        delete: true
+        editor:
+          preview: false
+        file: src/pages/excluded/thanks.md
+        fields:
+          - label: Page Title
+            name: page_heading
+            widget: string
+            required: true
+          - label: Body
+            name: body
+            widget: markdown
+            editor_components: []
+            modes: [rich_text]
+            required: true
+
+      - label: Page Not Found (404 Error)
+        name: error404
+        delete: true
+        editor:
+          preview: false
+        file: src/pages/excluded/404.md
+        fields:
+          - label: Page Title
+            name: page_heading
+            widget: string
+            required: true
+          - label: Body
+            name: body
+            widget: markdown
+            editor_components: []
+            modes: [rich_text]
+            required: true

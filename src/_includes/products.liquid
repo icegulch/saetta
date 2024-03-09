@@ -1,11 +1,10 @@
 ---
-permalink: /products/index.html
-title: Products
+layout: base
 ---
 
 <section class="section">
   <div class="container spacing spacing--products fade-in-all">
-    {% for product in productspage.products %}
+    {% for product in products %}
       <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
         <figure>
           <img src="{{ product.photo }}">
