@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <title>
       {% if page.fileSlug == 'homepage' %}
-        {{ site.title }} | {{ site.description }}
-      {% elsif title %}
-        {{ title }} | {{ site.title }}
+        {{ meta.seo_title }} | {{ meta.seo_description }}
+      {% elsif seo_title %}
+        {{ seo_title }} | {{ meta.seo_title }}
       {% else %}
-        {{ site.title }}
+        {{ meta.seo_title }}
       {% endif %}
     </title>
     <meta name="generator" content="{{ eleventy.generator }}">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ meta.seo_description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% include "og.liquid" %}
     {% include "meta_icons.liquid" %}

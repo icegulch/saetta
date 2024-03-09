@@ -9,12 +9,29 @@ media_folder: "src/images/" # Media files will be stored in the repo under stati
 public_folder: "/images/" # The src attribute for uploaded media will begin with /images/
 
 collections:
+  - name: global
+    label: Site Settings
+    files:
+      - label: Meta
+        name: meta
+        editor:
+          preview: false
+        file: src/_data/meta.json
+        fields:
+          - label: SEO Title
+            name: seo_title
+            widget: string
+            required: true
+          - label: SEO Description
+            name: seo_description
+            widget: text
+            required: true
+
   - name: pages
     label: Pages
     files:
       - label: Homepage
         name: homepage
-        delete: true
         editor:
           preview: false
         file: src/homepage.md
@@ -30,7 +47,6 @@ collections:
 
       - label: Products
         name: products
-        delete: true
         editor:
           preview: false
         file: src/products.md
@@ -63,7 +79,6 @@ collections:
 
       - label: Library
         name: library
-        delete: true
         editor:
           preview: false
         file: src/pages/library.md
@@ -81,7 +96,6 @@ collections:
 
       - label: About
         name: about
-        delete: true
         editor:
           preview: false
         file: src/pages/about.md
@@ -99,7 +113,6 @@ collections:
 
       - label: Contact
         name: contact
-        delete: true
         editor:
           preview: false
         file: src/pages/contact.md
@@ -117,7 +130,6 @@ collections:
 
       - label: Thank You
         name: thanks
-        delete: true
         editor:
           preview: false
         file: src/pages/excluded/thanks.md
@@ -135,7 +147,6 @@ collections:
 
       - label: Page Not Found (404 Error)
         name: error404
-        delete: true
         editor:
           preview: false
         file: src/pages/excluded/404.md
