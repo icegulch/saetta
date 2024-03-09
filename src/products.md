@@ -10,7 +10,7 @@ products:
 
       Curabitur sodales aliquam ipsum, id lacinia nisi condimentum vitae. Donec condimentum purus magna, sed mollis ex malesuada et. Nulla facilisi. Phasellus laoreet odio eget pretium consequat.
     photo: /images/oscillator.jpeg
-    datasheet_link:
+    datasheet:
   - title: 10GHz Oscillator
     description: >
       Curabitur consequat bibendum nisl, eget commodo mi hendrerit eu. Aenean et libero sed libero porta ultrices non eu leo. Vivamus in nulla rutrum, tempus turpis id, congue libero. Fusce eleifend neque leo, pharetra imperdiet massa vestibulum vel. Donec ornare pharetra nisi, eu luctus nunc porta ultricies. In vulputate leo eu massa iaculis, vel aliquam ex condimentum.
@@ -18,7 +18,7 @@ products:
 
       Maecenas et tempor orci. Vivamus venenatis felis quis urna consequat, sed sollicitudin lorem aliquam. Praesent fermentum neque ipsum, in iaculis massa vulputate eu. Praesent id fringilla urna.
     photo: /images/oscillator.jpeg
-    datasheet_link:
+    datasheet:
   - title: 10.2GHz Oscillator
     description: >
       Quisque vulputate nisl non nibh rutrum, eu dictum mauris varius. Morbi a molestie urna, quis ultrices orci. Etiam maximus tellus in metus bibendum mollis. Etiam consectetur, turpis nec pretium lobortis, lorem lacus consectetur nisi, ut ornare purus turpis at turpis. Ut eu urna mi. Quisque ut mauris odio. Donec nec vehicula lorem.
@@ -26,7 +26,7 @@ products:
 
       Praesent purus lectus, ornare id mattis vel, malesuada vitae mauris. Nullam ut eros et diam feugiat cursus ac id purus.
     photo: /images/oscillator.jpeg
-    datasheet_link:
+    datasheet:
   - title: 12GHz Oscillator
     description: >
       Donec lobortis convallis dictum. Pellentesque eget nisl ut enim porta finibus quis nec elit. Integer volutpat, leo vestibulum interdum dignissim, justo nunc eleifend lorem, vitae pretium libero magna eu tortor. Morbi vitae tincidunt tortor. Duis mattis turpis non erat dignissim tincidunt.
@@ -34,5 +34,5 @@ products:
 
       Nunc fringilla vehicula felis, vitae faucibus tortor vestibulum sit amet. Donec tristique pharetra turpis, id malesuada risus efficitur a.
     photo: /images/oscillator.jpeg
-    datasheet_link:
+    datasheet:
 ---
