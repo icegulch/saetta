@@ -10,9 +10,9 @@ public_folder: "/images/" # The src attribute for uploaded media will begin with
 
 collections:
   - name: global
-    label: Site Settings
+    label: Settings
     files:
-      - label: Meta
+      - label: Site Meta
         name: meta
         editor:
           preview: false
@@ -26,6 +26,12 @@ collections:
             name: seo_description
             widget: text
             required: true
+          - label: Share Image
+            name: og_img
+            widget: image
+            allow_multiple: false
+            choose_url: false
+            hint: Image shown on listing pages & in social media posts
 
   - name: pages
     label: Pages
