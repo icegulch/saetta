@@ -69,7 +69,7 @@ collections:
         file: src/products.md
         fields:
           - label: Page Title
-            name: page_heading
+            name: seo_title
             widget: string
             required: true
           - label: Products
