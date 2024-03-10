@@ -11,7 +11,7 @@ The lowest phase noise and also most stable oscillators in the world are derived
 
 Saetta, or sa’etta is an old Italian word meaning ‘lightning’ or ‘quick’. I spend more time in the ‘lab’ that at a desk so the name Saetta Labs was born, or in English, you might say ‘lightning laboratory’. A fitting name for an purely microwave company.
 
-It’s also the name of [my favorite wine from Italy](http://www.montebernardi.com/saetta-riserva.html)...
+It’s also the name of [my favorite wine from Italy](http://www.montebernardi.com/)...
 
 ## Jason Breitbarth
 
