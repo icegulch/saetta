@@ -147,7 +147,7 @@ collections:
         file: src/pages/contact.md
         fields:
           - label: Page Title
-            name: page_heading
+            name: seo_title
             widget: string
             required: true
           - label: Body
@@ -164,7 +164,7 @@ collections:
         file: src/pages/excluded/thanks.md
         fields:
           - label: Page Title
-            name: page_heading
+            name: seo_title
             widget: string
             required: true
           - label: Body
@@ -181,7 +181,7 @@ collections:
         file: src/pages/excluded/404.md
         fields:
           - label: Page Title
-            name: page_heading
+            name: seo_title
             widget: string
             required: true
           - label: Body
