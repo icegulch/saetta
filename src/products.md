@@ -53,5 +53,5 @@ products:
       Nunc fringilla vehicula felis, vitae faucibus tortor vestibulum sit amet. Donec tristique pharetra turpis, id malesuada risus efficitur a.
     photo: /images/oscillator.jpeg
     datasheet: src/pdfs/how-does-your-garden-grow-details.pdf
-last_modified: 2024-03-10T00:10:43.716Z
+last_modified: 2024-03-10T00:18:14.439Z
 ---
