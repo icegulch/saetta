@@ -43,7 +43,7 @@ collections:
         file: src/homepage.md
         fields:
           - label: Hero Image
-            name: hero_img
+            name: hero_image
             widget: image
             allow_multiple: false
             choose_url: false
