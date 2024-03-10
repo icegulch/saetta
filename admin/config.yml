@@ -42,6 +42,11 @@ collections:
           preview: false
         file: src/homepage.md
         fields:
+          - label: Hero Image
+            name: hero_img
+            widget: image
+            allow_multiple: false
+            choose_url: false
           - label: Hero Heading
             name: hero_heading
             widget: string
