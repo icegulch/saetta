@@ -1,6 +1,6 @@
 ---
 permalink: /about/index.html
-seo_title: About
+seo_title: Who We Are
 ---
 
 Saetta Labs was founded to produce the highest performing, low phase noise microwave oscillators. The core technology is based on whispering gallery mode sapphire loaded cavity (SLC). Our goal was to bring this technology from the physics lab to the microwave systems designer and to extend the use of the technology to more mainstream applications - radar, calibration, measurement, communications.

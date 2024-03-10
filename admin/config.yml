@@ -113,7 +113,7 @@ collections:
         file: src/pages/library.md
         fields:
           - label: Page Title
-            name: page_heading
+            name: seo_title
             widget: string
             required: true
           - label: Body
@@ -130,7 +130,7 @@ collections:
         file: src/pages/about.md
         fields:
           - label: Page Title
-            name: page_heading
+            name: seo_title
             widget: string
             required: true
           - label: Body

@@ -1,6 +1,5 @@
 ---
 permalink: /library/index.html
-page_heading: Library
 seo_title: Technical Resources for Low Phase Noise
 ---
 
