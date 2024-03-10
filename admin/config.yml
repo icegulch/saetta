@@ -42,13 +42,19 @@ collections:
           preview: false
         file: src/homepage.md
         fields:
-          - label: Page Title
-            name: page_heading
+          - label: Hero Heading
+            name: hero_heading
             widget: string
             required: true
-          - label: Page Subheading
-            name: page_subheading
+          - label: Hero Subheading
+            name: hero_subheading
             widget: string
+            required: true
+          - label: About the Company
+            name: about_blurb
+            widget: markdown
+            editor_components: []
+            modes: [rich_text]
             required: true
 
       - label: Products
