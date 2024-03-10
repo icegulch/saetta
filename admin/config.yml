@@ -26,12 +26,12 @@ collections:
             name: seo_description
             widget: text
             required: true
-          - label: Share Image
+          - label: Social Share Image
             name: og_img
             widget: image
             allow_multiple: false
             choose_url: false
-            hint: Image shown on listing pages & in social media posts
+            hint: Preview image shown in social media shares
 
   - name: pages
     label: Pages

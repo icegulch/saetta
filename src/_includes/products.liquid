@@ -9,19 +9,17 @@ layout: base
         <figure>
           <img src="{{ product.photo }}">
         </figure>
-        <article class="flow-content">
+        <article class="spacing spacing--content">
           <h2>
             {{ product.title }}
           </h2>
           {{ product.description | markdownify }}
-          <div class="readmore">
-            <a href="{{ site.domain }}{{ product.datasheet }}" target="_blank">
-              Datasheet
-              <svg>
-                <use xlink:href='#r-arrow' />
-              </svg>
-            </a>
-          </div>
+          <a href="{{ site.domain }}{{ product.datasheet }}" target="_blank" class="readmore">
+            Datasheet
+            <svg>
+              <use xlink:href='#r-arrow' />
+            </svg>
+          </a>
         </article>
       </div>
     {% endfor %}
