@@ -276,6 +276,9 @@ body {
 
 .page-title {
   text-align: center;
+}
+
+.page-title.pattern-bg {
   padding-block: 3rem;
 }
 
