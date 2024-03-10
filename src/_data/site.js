@@ -16,7 +16,7 @@ const getBuildInfo = () => {
 
 module.exports = {
   env: process.env.ELEVENTY_ENV,
-  domain: process.env.ELEVENTY_ENV === "production" ? "https://saettalabs.com" : "http://localhost:8080",
+  domain: process.env.ELEVENTY_ENV === "production" ? "https://saettalabs.com/" : "http://localhost:8080/",
   last_updated: getBuildInfo().time.formatted,
   copyright: getBuildInfo().time.raw.slice(0,4),
 };
