@@ -2,7 +2,6 @@
 layout: products
 permalink: /products/index.html
 title: Products
-page_heading: Products
 products:
   - title: 8GHz Oscillator
     description: >
