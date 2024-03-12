@@ -12,6 +12,22 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/pdfs");
 
+  eleventyConfig.addLiquidFilter("cloudinaryPrependDir", function (content) {
+    if (isProduction) {
+
+      const cloudinaryDirectory = "/optim";
+      const modifiedContent = content.replace(/<img(.*?)src="(.*?)"(.*?)>/gi, function (match, p1, p2, p3) {
+        const imageUrl = p2;
+        const newUrl = cloudinaryDirectory + imageUrl;
+        return `<img${p1}src="${newUrl}"${p3}>`;
+      });
+      return modifiedContent;
+    } else {
+      // Return the content unchanged in non-production environments
+      return content;
+    }
+  });
+
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({}).minify(code).styles;
   });
