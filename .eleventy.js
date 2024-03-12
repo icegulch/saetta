@@ -19,7 +19,7 @@ module.exports = function (eleventyConfig) {
       const modifiedContent = content.replace(/<img(.*?)src="(.*?)"(.*?)>/gi, function (match, p1, p2, p3) {
         const imageUrl = p2;
         const newUrl = cloudinaryDirectory + imageUrl;
-        return `<img${p1}src="${newUrl}"${p3}>`;
+        return `<img alt=""${p1}src="${newUrl}"${p3} loading="lazy">`;
       });
       return modifiedContent;
     } else {
