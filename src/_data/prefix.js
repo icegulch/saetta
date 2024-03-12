@@ -1,18 +1,8 @@
-// module.exports = {
+module.exports = {
 
-//   products:
-//     process.env.ELEVENTY_ENV === 'production' 
-//       ? '/products' 
-//       : '',
+  optim:
+    process.env.ELEVENTY_ENV === 'production' 
+      ? '/optim' 
+      : '',
 
-//   favicon:
-//     process.env.ELEVENTY_ENV === 'production'
-//       ? '/favicon'
-//       : '',
-
-//   opengraph:
-//     process.env.ELEVENTY_ENV === 'production'
-//       ? '/opengraph'
-//       : ''
-
-// };
+};
