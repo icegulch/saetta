@@ -26,7 +26,7 @@ products:
 
 
       Maecenas et tempor orci. Vivamus venenatis felis quis urna consequat, sed sollicitudin lorem aliquam. Praesent fermentum neque ipsum, in iaculis massa vulputate eu. Praesent id fringilla urna.
-    photo: /images/oscillator.jpeg
+    photo: /images/plo-2022-no-background-2x.png
     datasheet: /pdfs/datasheet2.pdf
   - title: 10.2GHz Oscillator
     description: >
@@ -52,5 +52,5 @@ products:
       Nunc fringilla vehicula felis, vitae faucibus tortor vestibulum sit amet. Donec tristique pharetra turpis, id malesuada risus efficitur a.
     photo: /images/oscillator.jpeg
     datasheet: /pdfs/datasheet4.pdf
-last_modified: 2024-03-10T00:21:54.337Z
+last_modified: 2024-03-14T16:37:34.052Z
 ---
