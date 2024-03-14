@@ -7,7 +7,7 @@ layout: base
     {% for product in products %}
       <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
         <figure>
-          <img src="{{ prefix.optim }}{{ product.photo }}" loading="lazy" width="1200" height="745" alt="Photo of {{ product.title }}">
+          <img src="{{ prefix.optim }}{{ product.photo }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" width="1200" height="745" alt="Photo of {{ product.title }}">
         </figure>
         <article class="spacing spacing--content">
           <h2>
