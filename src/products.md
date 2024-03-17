@@ -13,7 +13,7 @@ products:
 
 
       Curabitur sodales aliquam ipsum, id lacinia nisi condimentum vitae. Donec condimentum purus magna, sed mollis ex malesuada et. Nulla facilisi. Phasellus laoreet odio eget pretium consequat.
-    photo: /images/slco-8.00.jpeg
+    photo: /images/slco-8.00-sansbg.jpeg
     datasheet: /pdfs/datasheet1.pdf
   - title: 10GHz Oscillator
     description: >
@@ -52,5 +52,5 @@ products:
       Nunc fringilla vehicula felis, vitae faucibus tortor vestibulum sit amet. Donec tristique pharetra turpis, id malesuada risus efficitur a.
     photo: /images/oscillator.jpeg
     datasheet: /pdfs/datasheet4.pdf
-last_modified: 2024-03-17T18:33:20.716Z
+last_modified: 2024-03-17T19:14:22.391Z
 ---
