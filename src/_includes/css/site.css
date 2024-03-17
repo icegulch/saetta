@@ -265,6 +265,7 @@ body {
 .home-hero {
   display: grid;
   gap: 3rem;
+  text-align: center;
 }
 
 .page-title {
