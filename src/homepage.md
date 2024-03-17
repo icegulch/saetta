@@ -1,8 +1,8 @@
 ---
 layout: homepage
 permalink: /
-hero_image: https://res.cloudinary.com/saettalabs/image/upload/e_background_removal/SLCO-8.00_kswnqr.png
-hero_heading: Sapphire Loaded Cavity Oscillators
+hero_image: /images/slco-8.00.png
+hero_heading: Sapphire-Loaded Cavity Oscillators
 hero_subheading: Whispering gallery mode 6.4GHz - 12.8GHz
 about_blurb: >
   Saetta, or **/sa’et.ta/** is an old Italian word meaning “lightning” or
@@ -10,5 +10,5 @@ about_blurb: >
 
 
   Saetta Labs was founded to produce the highest performing, low phase noise microwave oscillators. The core technology is based on whispering gallery mode sapphire loaded cavity (SLC). The company’s goal is to bring this technology from the physics lab to the microwave systems designer and to extend the use of the technology to more mainstream applications, such as radar, calibration, measurement, communications.
-last_modified: 2024-03-17T18:32:59.447Z
+last_modified: 2024-03-17T21:06:54.916Z
 ---
