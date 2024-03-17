@@ -1,21 +1,14 @@
 
 <div class="primary-footer container">
   <nav class="footer-nav">
-    {% assign currentUrl = page.url %}
-    {% assign allPages = 'Products,Library,About' | split: ',' %}
-    {% for item in allPages %}
-    {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}
-    <a href="{{ leSlug }}" {% if currentUrl==leSlug %}aria-current="page" {% endif %}>
-      {{ item }}
-    </a>
-    {%- endfor %}
+    <address>
+      1434 Spruce St<br>
+      Boulder CO 80302<br>
+    </address>
   </nav>
   <address>
-    Saetta Labs<br>
-    1434 Spruce St<br>
-    Boulder CO 80302<br>
     <a href="tel:720-504-7467">720-504-7467</a><br>
-    [<a href="/contact/">Contact Form</a>]
+    <a href="mailto:sales@saettalabs.com">sales@saettalabs.com</a>
   </address>
   <div>
     &copy; 2023{% if site.copyright != "2023" %}{{ site.copyright | prepend: "-" }}{% endif %} {{ meta.seo_title }}

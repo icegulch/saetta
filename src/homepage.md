@@ -1,8 +1,8 @@
 ---
 layout: homepage
 permalink: /
-hero_image: /images/slco-8.00.jpeg
-hero_heading: Sapphire-Loaded Cavity Oscillators
+hero_image: https://res.cloudinary.com/saettalabs/image/upload/e_background_removal/SLCO-8.00_kswnqr.png
+hero_heading: Sapphire Loaded Cavity Oscillators
 hero_subheading: Whispering gallery mode 6.4GHz - 12.8GHz
 about_blurb: >
   Saetta, or **/sa’et.ta/** is an old Italian word meaning “lightning” or
