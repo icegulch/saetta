@@ -278,7 +278,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .home-hero {
-    grid-template-columns: 1fr 1.6218fr;
+    grid-template-columns: calc(50% - 3rem) 1fr;
     align-items: center;
     text-align: left;
   }
