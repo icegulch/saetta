@@ -1,27 +1,51 @@
 ---
 layout: base
+permalink: /products/index.html
+seo_title: Products
 ---
 
 <section class="section">
   <div class="container spacing spacing--products fade-in-all">
-    {% for product in products %}
-      <div class="even-columns even-columns--{% cycle 'default', 'reversed' %}">
-        <figure>
-          <img src="{{ prefix.optim }}{{ product.photo }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}" width="1200" height="745" alt="Photo of {{ product.title }}">
-        </figure>
-        <article class="spacing spacing--content">
-          <h2>
-            {{ product.title }}
-          </h2>
-          {{ product.description | markdownify }}
-          <a href="{{ site.domain }}{{ product.datasheet }}" target="_blank" class="readmore">
-            Datasheet
-            <svg>
-              <use xlink:href='#r-arrow' />
-            </svg>
-          </a>
-        </article>
-      </div>
-    {% endfor %}
+    <div class="even-columns even-columns--default">
+      <figure>
+        <img src="{{ prefix.optim }}/images/slco-8.00.png" loading="eager" width="1200" height="745" alt="Photo of 8GHz Sapphire Loaded Cavity Oscillator">
+      </figure>
+      <article class="spacing spacing--content">
+        <h2>
+          8GHz Sapphire Loaded Cavity Oscillator
+        </h2>
+        <p>
+          This highly integrated X-band oscillator operates fundamentally at 8GHz and is thermally stabilized and phase lockable to 10MHz. Measuring 4.25 inches by 6.25 inches by 3.15 inches, it eliminates the need for all other intermediate oscillators used in high performance systems (100MHz OCXO, SAW, DRO and associated multiplier changes and PLLs.)
+        </p>
+        <p>
+          It operates off a single 12V supply, consuming 2.5 Amps on startup and dropping to less than 0.5 Amps at lab temperatures.
+        </p>
+        <a href="{{ site.domain }}/pdfs/datasheet.pdf" target="_blank" class="readmore">
+          Datasheet
+          <svg>
+            <use xlink:href='#r-arrow' />
+          </svg>
+        </a>
+      </article>
+    </div>
+    <div class="even-columns even-columns--reversed">
+      <figure>
+        <img src="{{ prefix.optim }}/images/plot-8ghz.jpg" loading="eager" width="1200" height="745" alt="Plot showing SLCO 8GHz free running">
+      </figure>
+      <article class="spacing spacing--content">
+        <h2>
+          {{ product.title }}
+        </h2>
+        <p>
+          Sapphire Loaded Cavities exhibit loaded Q’s in excess of 100,000 at X-band. The ‘Whispering gallery’ mode of operation is a pure microwave resonant mode within the sapphire operating on the reflection between the dielectric boundaries of sapphire and a pure vacuum. The result is unparalleled low phase noise performance.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <strong>Coming soon: 8.00GHz, 10.00GHz, and 12.00GHz SLCOs!</strong>
   </div>
 </section>
