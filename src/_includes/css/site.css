@@ -342,8 +342,7 @@ body {
 @media screen and (min-width: 768px) {
   .even-columns {
     flex-direction: row;
-    align-items: start;
-    /* justify-content: center; */
+    align-items: center;
   }
   .even-columns--reversed {
     flex-direction: row-reverse;
