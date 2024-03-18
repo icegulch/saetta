@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="32px" viewBox="0 0 1440 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-wave" fill="#F2F6F9" fill-rule="nonzero">
+            <path d="M0,0 L0,32 C0,32 236.034,4.66666667 438.606,4.66666667 C641.178,4.66666667 763.848,30 1053.774,30 C1293.948,30 1366.974,16.6666667 1440,12.1266667 L1440,0 L0,0 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>
