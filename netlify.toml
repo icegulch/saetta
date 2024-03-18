@@ -2,3 +2,8 @@
 from = "/optim/*"
 to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_optim/https://luminous-beijinho-3b7efb.netlify.app/:splat"
 status = 200
+
+[[redirects]]
+from = "/product/*"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_product/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+status = 200

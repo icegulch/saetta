@@ -5,4 +5,9 @@ module.exports = {
       ? '/optim' 
       : '',
 
+  product:
+    process.env.ELEVENTY_ENV === 'production' 
+      ? '/product' 
+      : '',
+
 };
