@@ -21,7 +21,7 @@
       {% for item in allPages %}
         {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}
         <li {%- if currentUrl == leSlug %} class="active"{% endif %}>
-          <a href="{{ leSlug }}"  {%- if currentUrl == leSlug %} aria-current="page"{% endif %}>
+          <a href="{{ leSlug }}#"  {%- if currentUrl == leSlug %} aria-current="page"{% endif %}>
             {{ item }}
           </a>
         </li>
