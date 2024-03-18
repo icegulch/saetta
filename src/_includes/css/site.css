@@ -343,13 +343,16 @@ body {
   .even-columns {
     flex-direction: row;
     align-items: start;
-    justify-content: center;
+    /* justify-content: center; */
   }
   .even-columns--reversed {
     flex-direction: row-reverse;
   }
   .even-columns>* {
     flex: 0 1 50%;
+  }
+  .even-columns>div {
+    text-align: center;
   }
 }
 
