@@ -263,8 +263,10 @@ body {
 /* HOME */
 
 .home-hero {
-  display: grid;
-  gap: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
   text-align: center;
 }
 
@@ -278,11 +280,11 @@ body {
 
 @media screen and (min-width: 768px) {
   .home-hero {
-    grid-template-columns: calc(50% - 3rem) 1fr;
+    flex-direction: row;
+    gap: 3rem;
     align-items: center;
-    text-align: left;
   }
-  .home-hero .page-title {
+  .home-hero .page-title, .home-hero hgroup {
     text-align: left;
   }
 }
@@ -340,7 +342,8 @@ body {
 @media screen and (min-width: 768px) {
   .even-columns {
     flex-direction: row;
-    align-items: center;
+    align-items: start;
+    justify-content: center;
   }
   .even-columns--reversed {
     flex-direction: row-reverse;
