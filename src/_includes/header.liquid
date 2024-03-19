@@ -22,7 +22,7 @@
           Home
         </a>
       </li>
-      {% assign allPages = 'Products,Library,About,Contact' | split: ',' %}
+      {% assign allPages = 'Products,Lab,About,Contact' | split: ',' %}
       {% for item in allPages %}
         {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}
         <li {%- if currentUrl == leSlug %} class="active"{% endif %}>
