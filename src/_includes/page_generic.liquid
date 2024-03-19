@@ -5,7 +5,7 @@ layout: base
 <section class="section">
   <div class="container container--squeezed fade-in-all">
     <article class="spacing spacing--content">
-      {{ content | cloudinaryPrependDir }}
+      {{ content }}
     </article>
     {% if page.url == '/contact/' %}
       <form class="contact-form" name="contact" netlify-honeypot="fu" action="/contact/thank-you/" netlify>

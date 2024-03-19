@@ -3,10 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <title>
-      {% if page.fileSlug == 'homepage' %}
-        {{ meta.seo_title }} | {{ meta.seo_description }}
-      {% elsif seo_title %}
-        {{ seo_title }} | {{ meta.seo_title }}
+      {% if seo_title %}
+        {{ meta.seo_title }} | {{ seo_title }}
       {% else %}
         {{ meta.seo_title }}
       {% endif %}

@@ -43,23 +43,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("markdownify", (str) => md.render(str));
 
-  eleventyConfig.addLiquidFilter("cloudinaryPrependDir", function (content) {
-    if (isProduction) {
-      const cloudinaryDirectory = "/products";
-      const modifiedContent = content.replace(
-        /<img(.*?)src="(.*?)"(.*?)>/gi,
-        function (match, p1, p2, p3) {
-          const imageUrl = p2;
-          const newUrl = cloudinaryDirectory + imageUrl;
-          return `<img${p1}src="${newUrl}"${p3}>`;
-        }
-      );
-      return modifiedContent;
-    } else {
-      // Return the content unchanged in non-production environments
-      return content;
-    }
-  });
 
   // Minify HTML Output
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {

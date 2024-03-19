@@ -4,6 +4,7 @@
   --clr-slate-700: #334155;
   --clr-secondary: #246196;
   --clr-primary: #C20E0E;
+  --clr-dark-red: #A20101;
   --clr-light-gray: #f2f6f9;
   --clr-gray: #828689;
   --clr-rule-gray: #e2e6e9;
@@ -321,16 +322,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .homepage-ctas {
-      justify-content: start;
+    justify-content: start;
   }
 }
 
 .homepage-ctas .btn--primary svg {
   fill: white;
-}
-
-.homepage-ctas .btn--secondary svg {
-  fill: var(--clr-secondary);
 }
 
 .homepage-ctas .btn:hover svg,
@@ -534,15 +531,15 @@ body {
   color: #fff;
 }
 
-.btn:hover,
-.btn:focus,
-.btn:active {
-  background-color: var(--clr-secondary);
-  border-color: var(--clr-secondary);
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: var(--clr-dark-red);
+  border-color: var(--clr-dark-red);
 }
 
 .btn--primary:hover,
-.btn--primary:focus .btn--primary:active {
+.btn--primary:focus, 
+.btn--primary:active {
   color: #fff;
 }
 
@@ -614,6 +611,11 @@ h1 {
   width: 1px;
 }
 
+@media screen and (min-width: 768px) {
+  .hide-desktop {
+    display: none; 
+  }
+}
 
 /* MARKDOWN CONTENT SPACING */
 

@@ -1,5 +1,6 @@
 ---
 permalink: /contact/index.html
+nav_title: Contact
 seo_title: Contact Us
 ---
 

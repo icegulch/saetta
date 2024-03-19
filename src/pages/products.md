@@ -1,4 +1,5 @@
 ---
+nav_title: Products
 seo_title: Products
 products:
   - title: 8GHz Oscillator

@@ -17,6 +17,11 @@
   <nav>
     <ul id="primary-navigation" data-visible="false" class="header-nav">
       {% assign currentUrl =  page.url %}
+      <li class="hide-desktop{%- if currentUrl == '/' %} active" {% endif %}">
+        <a href="/#" {%- if currentUrl == '/' %} aria-current="page" {% endif %}>
+          Home
+        </a>
+      </li>
       {% assign allPages = 'Products,Library,About,Contact' | split: ',' %}
       {% for item in allPages %}
         {% assign leSlug = item | slugify | prepend: '/' | append: '/' %}

@@ -1,5 +1,6 @@
 ---
 permalink: /about/index.html
+nav_title: About
 seo_title: Who We Are
 ---
 
