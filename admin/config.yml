@@ -78,8 +78,8 @@ collections:
             widget: list
             collapsed: true
             minimize_collapsed: false
-            allow_add: true
-            add_to_top: true
+            allow_add: false
+            # add_to_top: true
             summary: "{{title}}"
             fields:
               - { label: Product Title, name: title, widget: string }
@@ -105,6 +105,21 @@ collections:
                 choose_url: false
                 media_folder: pdfs/
                 required: false
+              - label: Plot Image
+                name: plot_image
+                widget: image
+                allow_multiple: false
+                choose_url: false
+              - {
+                  label: Plot Description,
+                  name: plot_description,
+                  widget: markdown,
+                  minimal: true,
+                  buttons: [bold, italic, link],
+                  modes: [rich_text],
+                  editor_components: [],
+                  required: true,
+                }
 
       - label: Library
         name: library
