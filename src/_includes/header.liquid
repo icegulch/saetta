@@ -17,7 +17,7 @@
   <nav>
     <ul id="primary-navigation" data-visible="false" class="header-nav">
       {% assign currentUrl =  page.url %}
-      <li class="hide-desktop{%- if currentUrl == '/' %} active" {% endif %}">
+      <li class="hide-desktop{%- if currentUrl == '/' %} active {% endif %}">
         <a href="/#" {%- if currentUrl == '/' %} aria-current="page" {% endif %}>
           Home
         </a>
