@@ -4,40 +4,32 @@ layout: base
 
 <section class="section">
   <div class="container spacing spacing--products fade-in-all">
-    <div class="even-columns even-columns--default">
-      <div>
-        <img src="{{ prefix.product }}/images/slco-8.00.png" loading="eager" width="533" height="455" alt="Photo of 8GHz Sapphire Loaded Cavity Oscillator">
+    {% for product in products %}
+      <div class="even-columns even-columns--default">
+        <div>
+          <img src="{{ prefix.product }}{{ product.photo }}" loading="eager" width="533" height="455" alt="Photo of {{ product.title }}">
+        </div>
+        <article class="spacing spacing--content">
+          <h2>
+            {{ product.title }}
+          </h2>
+          {{ product.description | markdownify }}
+          <a href="{{ product.datasheet }}" target="_blank" class="readmore">
+            Datasheet
+            <svg>
+              <use xlink:href='#r-arrow' />
+            </svg>
+          </a>
+        </article>
       </div>
-      <article class="spacing spacing--content">
-        <h2>
-          8GHz Sapphire Loaded Cavity Oscillator
-        </h2>
-        <p>
-          This highly integrated X-band oscillator operates fundamentally at 8GHz and is thermally stabilized and phase lockable to 10MHz. Measuring 4.25 inches by 6.25 inches by 3.15 inches, it eliminates the need for all other intermediate oscillators used in high performance systems (100MHz OCXO, SAW, DRO and associated multiplier changes and PLLs.)
-        </p>
-        <p>
-          It operates off a single 12V supply, consuming 2.5 Amps on startup and dropping to less than 0.5 Amps at lab temperatures.
-        </p>
-        <a href="{{ site.domain }}/pdfs/datasheet.pdf" target="_blank" class="readmore">
-          Datasheet
-          <svg>
-            <use xlink:href='#r-arrow' />
-          </svg>
-        </a>
-      </article>
-    </div>
-    <div class="even-columns even-columns--reversed">
-      <div>
-        <img src="{{ prefix.product }}/images/plot-8ghz.jpg" loading="eager"  width="567" height="455" alt="Plot showing SLCO 8GHz free running">
+      <div class="even-columns even-columns--reversed">
+        <div>
+          <img src="{{ prefix.product }}{{ product.plot_image }}" loading="eager"  width="567" height="455" alt="Plot showing {{ product.title }} free running">
+        </div>
+        <article class="spacing spacing--content">
+          {{ product.plot_description | markdownify }}
+        </article>
       </div>
-      <article class="spacing spacing--content">
-        <p>
-          The ‘whispering-gallery’ mode is a pure microwave resonance within the sapphire operating on a reflection between dielectric boundaries of the sapphire and a vacuum. This eliminates metal losses and results ultra high Q-factor and unparalleled low phase noise performance.
-        </p>
-        <p>
-          <strong>Coming soon: 10.00GHz, 10.24GHz and 12.00GHz</strong>
-        </p>
-      </article>
-    </div>
+    {% endfor %}
   </div>
 </section>
