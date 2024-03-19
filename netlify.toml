@@ -1,4 +1,14 @@
 [[redirects]]
+from = "/favicon/:width/:height/"
+to = "https://res.cloudinary.com/saettalabs/b_rgb:D2D6D9,c_lpad,g_center,w_:width,h_:height/r_20/favicon_knme78.jpg"
+status = 200
+
+[[redirects]]
+from = "/opengraph/*"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_opengraph/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+status = 200
+
+[[redirects]]
 from = "/optim/*"
 to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_optim/https://luminous-beijinho-3b7efb.netlify.app/:splat"
 status = 200
