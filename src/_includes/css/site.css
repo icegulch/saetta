@@ -378,14 +378,23 @@ body {
 
 .posts {
   display: grid;
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .post {
   display: grid;
-  grid-template-columns: 2fr 5fr;
-  justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .posts {
+    gap: 2.5rem;
+  }
+
+  .post {
+    grid-template-columns: 2fr 5fr;
+    gap: 1.5rem;
+  }
 }
 
 
