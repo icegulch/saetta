@@ -15,9 +15,14 @@ module.exports = {
       ? '/hero' 
       : '',
 
-  product:
+  products:
     process.env.ELEVENTY_ENV === 'production' 
-      ? '/product' 
+      ? '/products' 
+      : '',
+
+  postcover:
+    process.env.ELEVENTY_ENV === 'production' 
+      ? '/postcover' 
       : '',
 
 };

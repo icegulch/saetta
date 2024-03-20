@@ -35,7 +35,7 @@ layout: base
       {% for post in featuredPosts %}
         <li class="post">
           <a href="{{ post.data.link }}">
-            <img src="{{ post.data.teaser }}" width="200" height="" alt="{{ post.data.title }}">
+            <img src="{{ prefix.postcover }}{{ post.data.teaser }}" width="592" height="333" alt="{{ post.data.title }}" loading="lazy">
           </a>
           <div class="spacing--content">
             <h2 style="margin-bottom:0.45rem;">{{ post.data.title }}</h2>

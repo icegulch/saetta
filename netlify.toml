@@ -14,6 +14,11 @@ to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_hero/https://lu
 status = 200
 
 [[redirects]]
-from = "/product/*"
+from = "/products/*"
 to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_products/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+status = 200
+
+[[redirects]]
+from = "/postcover/*"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_postcover/https://luminous-beijinho-3b7efb.netlify.app/:splat"
 status = 200
