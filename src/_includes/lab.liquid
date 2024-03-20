@@ -5,7 +5,7 @@ layout: base
 <section class="section">
   <div class="container container--squeezed">
     <ul class="posts" style="margin:0;padding:0;list-style:none;">
-      {% assign featuredPosts = collections.posts | sort: 'data.publish_date' | reverse %}
+      {% assign featuredPosts = collections.posts | sort: 'data.last_modified' | reverse %}
       {% for post in featuredPosts %}
         <li class="post">
           <a href="{{ post.data.link }}">
