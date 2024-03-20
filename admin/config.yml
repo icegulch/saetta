@@ -222,6 +222,7 @@ collections:
       - label: Show on Homepage?
         name: homepage
         widget: boolean
+        required: false
       - label: Body
         name: body
         widget: markdown
