@@ -3,10 +3,12 @@ backend:
   name: git-gateway
   branch: main
 
+logo_url: https://luminous-beijinho-3b7efb.netlify.app/images/saetta-logo.svg
+
 show_preview_links: false
 
-media_folder: "src/images/" # Media files will be stored in the repo under src/images/
-public_folder: "/images/" # The src attribute for uploaded media will begin with /images/
+media_folder: "src/images/cms/" # Media files will be stored in the repo under src/images/
+public_folder: "/images/cms/" # The src attribute for uploaded media will begin with /images/
 
 collections:
   - name: global
@@ -29,6 +31,7 @@ collections:
           - label: Social Share Image
             name: og_img
             widget: image
+            media_folder: /src/images/cms/og/
             allow_multiple: false
             choose_url: false
             hint: Preview image shown in social media shares
