@@ -1,0 +1,27 @@
+---
+layout: base
+---
+
+<section class="section">
+  <div class="container container--squeezed">
+    <ul class="posts" style="margin:0;padding:0;list-style:none;">
+      {% assign featuredPosts = collections.posts | where: 'data.homepage' | sort: 'data.publish_date' | reverse %}
+      {% for post in featuredPosts %}
+        <li class="post">
+          <a href="{{ post.data.link }}">
+            <img src="{{ prefix.postcover }}{{ post.data.teaser }}" width="592" height="333" alt="{{ post.data.title }}" loading="lazy">
+          </a>
+          <div class="spacing--content">
+            <h2 style="margin-bottom:0.45rem;">{{ post.data.title }}</h2>
+            {{ post.templateContent }}
+            <p style="margin-top:0.45rem">
+              <a href="{{ post.data.link }}">
+                Read more
+              </a>
+            </p>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

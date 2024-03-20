@@ -386,6 +386,11 @@ body {
   gap: 1rem;
 }
 
+.post h2 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
 @media screen and (min-width: 576px) {
   .posts {
     gap: 2.5rem;
@@ -663,6 +668,7 @@ h1 {
 }
 
 .spacing--content p {
+  text-align: justify;
   line-height: 1.65;
 }
 
