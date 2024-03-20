@@ -15,5 +15,5 @@ status = 200
 
 [[redirects]]
 from = "/product/*"
-to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_product/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_products/https://luminous-beijinho-3b7efb.netlify.app/:splat"
 status = 200
