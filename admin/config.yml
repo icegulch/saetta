@@ -190,8 +190,8 @@ collections:
             required: true
 
   - name: posts
-    label: Posts
-    label_singular: Product
+    label: Lab Posts
+    label_singular: Post
     folder: src/posts/
     slug: "{{fields.publish_date}}"
     extension: md
