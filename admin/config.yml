@@ -6,6 +6,7 @@ backend:
 logo_url: https://luminous-beijinho-3b7efb.netlify.app/images/saetta-logo.svg
 
 show_preview_links: false
+search: false
 
 media_folder: "src/images/cms/" # Media files will be stored in the repo under src/images/
 public_folder: "/images/cms/" # The src attribute for uploaded media will begin with /images/
@@ -48,6 +49,7 @@ collections:
           - label: Hero Image
             name: hero_image
             widget: image
+            media_folder: /src/images/cms/home/
             allow_multiple: false
             choose_url: false
           - label: Hero Heading
@@ -99,6 +101,7 @@ collections:
               - label: Photo
                 name: photo
                 widget: image
+                media_folder: /src/images/cms/products/
                 allow_multiple: false
                 choose_url: false
               - label: Datasheet
@@ -106,11 +109,12 @@ collections:
                 widget: file
                 allow_multiple: false
                 choose_url: false
-                media_folder: pdfs/
+                media_folder: /src/pdfs/
                 required: false
               - label: Plot Image
                 name: plot_image
                 widget: image
+                media_folder: /src/images/cms/products/
                 allow_multiple: false
                 choose_url: false
               - {
@@ -220,6 +224,7 @@ collections:
       - label: Teaser Image
         name: teaser
         widget: image
+        media_folder: /src/images/cms/posts/
         allow_multiple: false
         choose_url: false
       - label: Link
