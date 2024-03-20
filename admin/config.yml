@@ -121,6 +121,17 @@ collections:
                   required: true,
                 }
 
+      - label: Lab
+        name: lab
+        editor:
+          preview: false
+        file: src/pages/lab.md
+        fields:
+          - label: Page Title
+            name: seo_title
+            widget: string
+            required: true
+
       - label: About
         name: about
         editor:
