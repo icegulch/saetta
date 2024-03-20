@@ -7,7 +7,7 @@ layout: base
     {% for product in products %}
       <div class="even-columns even-columns--default">
         <div>
-          <img src="{{ prefix.product }}{{ product.photo }}" loading="eager" width="567" height="455" alt="Photo of {{ product.title }}">
+          <img src="{{ prefix.product }}{{ product.photo }}" loading="eager" width="567" height="450" alt="Photo of {{ product.title }}">
         </div>
         <article class="spacing spacing--content">
           <h2>
@@ -24,7 +24,7 @@ layout: base
       </div>
       <div class="even-columns even-columns--reversed">
         <div>
-          <img src="{{ prefix.product }}{{ product.plot_image }}" loading="eager"  width="567" height="455" alt="Plot showing {{ product.title }} free running">
+          <img src="{{ prefix.product }}{{ product.plot_image }}" loading="eager"  width="567" height="450" alt="Plot showing {{ product.title }} free running">
         </div>
         <article class="spacing spacing--content">
           {{ product.plot_description | markdownify }}
