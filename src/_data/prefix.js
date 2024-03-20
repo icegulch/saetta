@@ -10,9 +10,9 @@ module.exports = {
       ? '/opengraph' 
       : '',
 
-  optim:
+  hero:
     process.env.ELEVENTY_ENV === 'production' 
-      ? '/optim' 
+      ? '/hero' 
       : '',
 
   product:

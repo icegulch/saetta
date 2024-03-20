@@ -6,7 +6,7 @@ layout: base
   <div class="container">
     <article class="home-hero">
       <div>
-        <img class="fade-in-left" src="{{ prefix.optim }}{{ hero_image }}" alt="Photo of Saetta Labs's oscillator" loading="eager" width="410" height="350">
+        <img class="fade-in-left" src="{{ prefix.hero }}{{ hero_image }}" alt="Photo of Saetta Labs's oscillator" loading="eager" width="410" height="350">
       </div>
       <hgroup class="fade-in-right">
         <h1 class="page-title">
@@ -25,6 +25,29 @@ layout: base
         </div>
       </hgroup>
     </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container container--squeezed">
+    <ul class="posts" style="margin:0;padding:0;list-style:none;">
+      {% assign featuredPosts = collections.posts | sort: 'data.publish_date' | reverse %}
+      {% for post in featuredPosts %}
+        <li class="post">
+          <img src="{{ post.data.teaser }}" width="200" height="" alt="{{ post.data.title }}">
+          <div class="spacing--content">
+            <h2>{{ post.data.title }}</h2>
+            {{ post.templateContent }}
+            <a href="{{ post.data.link }}" target="_blank" class="readmore">
+              <svg>
+                <use xlink:href='#r-arrow' />
+              </svg>
+              Read more
+            </a>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 

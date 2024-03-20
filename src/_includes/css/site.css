@@ -366,6 +366,18 @@ body {
   }
 }
 
+.posts {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
 
 /* CONTACT  */
 
