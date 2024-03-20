@@ -188,3 +188,45 @@ collections:
             editor_components: []
             modes: [rich_text]
             required: true
+
+  - name: posts
+    label: Posts
+    label_singular: Product
+    folder: src/posts/
+    slug: "{{fields.publish_date}}"
+    extension: md
+    create: true # Allow users to create new documents in this collection
+    delete: true # Allow users to delete items in this collection
+    editor:
+      preview: false
+    fields: # The fields for each document, usually in front matter
+      - label: Title
+        name: title
+        widget: string
+      - label: Publish Date
+        name: publish_date
+        widget: datetime
+        date_format: YYYY-MM-DD
+        time_format: false
+        format: "YYYY-MM-DDTHH:mm"
+        picker_utc: true
+        required: true
+      - label: Teaser Image
+        name: teaser
+        widget: image
+        allow_multiple: false
+        choose_url: false
+      - label: Link
+        name: link
+        widget: string
+      - label: Show on Homepage?
+        name: homepage
+        widget: boolean
+      - label: Body
+        name: body
+        widget: markdown
+        minimal: true
+        buttons: [bold, italic]
+        modes: [rich_text]
+        editor_components: []
+        required: true
