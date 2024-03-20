@@ -34,16 +34,17 @@ layout: base
       {% assign featuredPosts = collections.posts | sort: 'data.publish_date' | reverse %}
       {% for post in featuredPosts %}
         <li class="post">
-          <img src="{{ post.data.teaser }}" width="200" height="" alt="{{ post.data.title }}">
+          <a href="{{ post.data.link }}">
+            <img src="{{ post.data.teaser }}" width="200" height="" alt="{{ post.data.title }}">
+          </a>
           <div class="spacing--content">
-            <h2>{{ post.data.title }}</h2>
+            <h2 style="margin-bottom:0.45rem;">{{ post.data.title }}</h2>
             {{ post.templateContent }}
-            <a href="{{ post.data.link }}" target="_blank" class="readmore">
-              <svg>
-                <use xlink:href='#r-arrow' />
-              </svg>
-              Read more
-            </a>
+            <p style="margin-top:0.45rem">
+              <a href="{{ post.data.link }}">
+                Read more
+              </a>
+            </p>
           </div>
         </li>
       {% endfor %}

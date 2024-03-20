@@ -368,7 +368,7 @@ body {
 
 .posts {
   display: grid;
-  gap: 1.5rem;
+  gap: 2.5rem;
 }
 
 .post {
