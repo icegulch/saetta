@@ -337,7 +337,7 @@ body {
 }
 
 
-/* PRODUCTS */
+/* GRID */
 
 .even-columns {
   display: flex;
@@ -352,19 +352,29 @@ body {
 @media screen and (min-width: 768px) {
   .even-columns {
     flex-direction: row;
-    align-items: center;
+    align-items: start;
     gap: 3rem;
   }
+
   .even-columns--reversed {
     flex-direction: row-reverse;
   }
+
   .even-columns>* {
     flex: 0 1 50%;
   }
+
   .even-columns>div {
     text-align: center;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .even-columns {
+      align-items: center;
+  }
+}
+
 
 .posts {
   display: grid;
