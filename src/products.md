@@ -5,7 +5,7 @@ nav_title: Products
 seo_title: Products
 products:
   - title: 8GHz Sapphire Loaded Cavity Oscillator
-    photo: /src/images/cms/products/slco-8.00.png
+    photo: /images/cms/products/slco-8.00.png
     datasheet: /pdfs/datasheet.pdf
     description: >
       This highly integrated X-band oscillator operates fundamentally at 8GHz
@@ -16,7 +16,7 @@ products:
 
 
       It operates off a single 12V supply, consuming 2.5 Amps on startup and dropping to less than 0.5 Amps at lab temperatures.
-    plot_image: /images/plot-8ghz.jpg
+    plot_image: /images/cms/products/plot-8ghz.jpg
     plot_description: >
       The ‘whispering-gallery’ mode is a pure microwave resonance within the
       sapphire operating on a reflection between dielectric boundaries of the

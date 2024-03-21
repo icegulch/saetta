@@ -3,7 +3,7 @@ layout: homepage
 permalink: /index.html
 nav_title: Home
 seo_title: Sapphire Loaded Cavity Oscillators
-hero_image: /images/slco-8.00.png
+hero_image: /images/cms/home/slco-8.00.png
 hero_heading: Sapphire Loaded Cavity Oscillators
 hero_subheading: Whispering gallery mode 8.0GHz to 12.0GHz
 about_blurb: >
