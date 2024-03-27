@@ -7,10 +7,10 @@ products:
   - title: 8GHz Sapphire Loaded Cavity Oscillator
     photo: /images/cms/products/slco-8.00.png
     datasheet: /pdfs/datasheet.pdf
-    description: >
-      This highly integrated X-band oscillator operates fundamentally at 8GHz
-      and is thermally stabilized and phase lockable to 10MHz. Measuring 4.25
-      inches by 6.25 inches by 3.15 inches, it eliminates the need for all other
+    description: >-
+      This highly integrated X-band oscillator operates fundamentally at 8GHz,
+      is thermally stabilized and phase lockable to 10MHz. Measuring 4.25 inches
+      by 6.25 inches by 3.15 inches, it eliminates the need for all other
       intermediate oscillators used in high performance systems (100MHz OCXO,
       SAW, DRO and associated multiplier changes and PLLs.)
 
@@ -25,5 +25,5 @@ products:
 
 
       **Coming soon: 10.00GHz, 10.24GHz and 12.00GHz**
-last_modified: 2024-03-20T23:39:32.750Z
+last_modified: 2024-03-27T22:00:36.917Z
 ---
