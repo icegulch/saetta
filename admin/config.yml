@@ -65,7 +65,7 @@ collections:
             name: plugs
             widget: list
             collapsed: true
-            minimize_collapsed: true
+            minimize_collapsed: false
             allow_add: true
             add_to_top: true
             summary: "{{fields.title}}"
