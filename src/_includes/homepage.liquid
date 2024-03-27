@@ -45,7 +45,7 @@ nav_title: Home
                 <h2 style="margin-bottom:0.45rem;">
                   {{ plug.title }}
                 </h2>
-                {{ plug.blurb }}
+                {{ plug.blurb | markdownify }}
                 <p style="margin-top:0.45rem">
                   <a href="{{ plug.link }}">
                     Read more

@@ -70,18 +70,26 @@ collections:
             add_to_top: true
             summary: "{{fields.title}}"
             fields:
-              - { label: Title, name: title, widget: string }
-              - {
-                  label: Blurb,
-                  name: blurb,
-                  widget: markdown,
-                  minimal: true,
-                  buttons: [bold, italic],
-                  modes: [rich_text],
-                  editor_components: [],
-                  required: true,
-                }
-              - { label: Link, name: link, widget: string }
+              - label: Title
+                name: title
+                widget: string
+              - label: Blurb
+                name: blurb
+                widget: markdown
+                minimal: true
+                buttons: [bold, italic]
+                modes: [rich_text]
+                editor_components: []
+                required: true
+              - label: Teaser Image
+                name: teaser
+                widget: image
+                media_folder: /src/images/cms/
+                allow_multiple: false
+                choose_url: false
+              - label: Link
+                name: link
+                widget: string
           - label: Featured Lab Posts
             name: featured_lab_posts
             widget: relation
