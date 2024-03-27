@@ -11,13 +11,9 @@ plugs:
     teaser: /images/cms/home/screenshot-2024-03-27-at-3.58.24-pm.png
     link: https://saettalabs.com/products/#
 about_blurb: >-
-  The core technology of Saetta Labs is based on a whispering gallery mode
-  sapphire-loaded cavity (SLC). The company’s goal is to bring SLC oscillator
-  technology from the physics lab to the microwave system designer. Applications
-  are anywhere low phase noise is required: radar, calibration, measurement and
-  communications.
+  ## Core Technology
 
 
-  Saetta (pronounced **/sa’et.ta/)** is an old Italian word meaning “lightning” or “quick”.
-last_modified: 2024-03-27T21:59:25.055Z
+  The core technology of Saetta Labs is based on a whispering gallery mode sapphire-loaded cavity (SLC). The company’s goal is to bring SLC oscillator technology from the physics lab to the microwave system designer. Applications are anywhere low phase noise is required: radar, calibration, measurement and communications.
+last_modified: 2024-03-27T22:16:41.967Z
 ---
