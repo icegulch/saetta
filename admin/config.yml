@@ -3,7 +3,7 @@ backend:
   name: git-gateway
   branch: main
 
-logo_url: https://luminous-beijinho-3b7efb.netlify.app/images/saetta-logo.svg
+logo_url: https://saetta-labs.netlify.app/images/saetta-logo.svg
 
 show_preview_links: false
 search: false

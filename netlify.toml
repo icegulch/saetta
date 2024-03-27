@@ -5,20 +5,20 @@ status = 200
 
 [[redirects]]
 from = "/opengraph/*"
-to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_opengraph/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_opengraph/https://saetta-labs.netlify.app/:splat"
 status = 200
 
 [[redirects]]
 from = "/hero/*"
-to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_hero/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_hero/https://saetta-labs.netlify.app/:splat"
 status = 200
 
 [[redirects]]
 from = "/products/*"
-to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_products/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_products/https://saetta-labs.netlify.app/:splat"
 status = 200
 
 [[redirects]]
 from = "/postcover/*"
-to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_postcover/https://luminous-beijinho-3b7efb.netlify.app/:splat"
+to = "https://res.cloudinary.com/saettalabs/image/fetch/f_auto/t_postcover/https://saetta-labs.netlify.app/:splat"
 status = 200
