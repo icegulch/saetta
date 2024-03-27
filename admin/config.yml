@@ -60,6 +60,15 @@ collections:
             name: hero_subheading
             widget: string
             required: true
+          - label: Featured Lab Posts
+            name: featured_lab_posts
+            widget: relation
+            collection: posts
+            search_fields: ["title"]
+            value_field: "title"
+            display_fields: ["title"]
+            multiple: true
+            required: false
           - label: About the Company
             name: about_blurb
             widget: markdown
