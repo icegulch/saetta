@@ -16,11 +16,13 @@ layout: base
               {{ post.data.title }}
             </h2>
             {{ post.templateContent }}
-            <p style="margin-top:0.45rem">
-              <a href="{{ post.data.link }}">
-                {{ post.data.link_text}}
-              </a>
-            </p>
+            {% if post.data.link_text %}
+              <p style="margin-top:0.45rem">
+                <a href="{{ post.data.link }}">
+                  {{ post.data.link_text }}
+                </a>
+              </p>
+            {% endif %}
           </div>
         </li>
       {% endfor %}

@@ -46,11 +46,13 @@ nav_title: Home
                   {{ plug.title }}
                 </h2>
                 {{ plug.blurb | markdownify }}
-                <p style="margin-top:0.45rem">
-                  <a href="{{ plug.link }}">
-                    {{ plug.link_text}}
-                  </a>
-                </p>
+                {% if plug.link_text %}
+                  <p style="margin-top:0.45rem">
+                    <a href="{{ plug.link }}">
+                      {{ plug.link_text}}
+                    </a>
+                  </p>
+                {% endif %}
               </div>
             </li>
           {% endfor %}
@@ -67,11 +69,13 @@ nav_title: Home
                   {{ item.data.title }}
                 </h2>
                 {{ item.templateContent }}
-                <p style="margin-top:0.45rem">
-                  <a href="{{ thisPost.data.link }}">
-                    {{ item.data.link_text }}
-                  </a>
-                </p>
+                {% if item.data.link %}
+                  <p style="margin-top:0.45rem">
+                    <a href="{{ item.data.link_text }}">
+                      {{ item.data.link_text }}
+                    </a>
+                  </p>
+                {% endif %}
               </div>
             </li>
           {% endfor %}
