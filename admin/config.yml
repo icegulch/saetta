@@ -256,6 +256,7 @@ collections:
         name: teaser
         widget: image
         media_folder: /src/images/cms/posts/
+        public_folder: /images/cms/posts/
         allow_multiple: false
         choose_url: false
       - label: Link
