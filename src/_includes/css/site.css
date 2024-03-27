@@ -682,6 +682,10 @@ h1 {
   padding-left: 1.25rem;
 }
 
+.spacing--content p + :is(h2,h3,h4,h5,h6) {
+  margin-top: 1rem;
+}
+
 
 
 /* ANIMATIONS */
