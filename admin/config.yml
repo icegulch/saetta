@@ -60,6 +60,28 @@ collections:
             name: hero_subheading
             widget: string
             required: true
+          - label: Plugs
+            label_singular: Plug
+            name: plugs
+            widget: list
+            collapsed: true
+            minimize_collapsed: true
+            allow_add: true
+            add_to_top: true
+            summary: "{{fields.title}}"
+            fields:
+              - { label: Title, name: title, widget: string }
+              - {
+                  label: Blurb,
+                  name: blurb,
+                  widget: markdown,
+                  minimal: true,
+                  buttons: [bold, italic],
+                  modes: [rich_text],
+                  editor_components: [],
+                  required: true,
+                }
+              - { label: Link, name: link, widget: string }
           - label: Featured Lab Posts
             name: featured_lab_posts
             widget: relation
