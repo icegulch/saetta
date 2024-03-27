@@ -9,9 +9,9 @@ about_blurb: >
 layout: homepage
 permalink: /index.html
 featured_lab_posts:
-  - For Precision, The Sapphire Clock Outshines Even The Best Atomic Clocks
   - See where Sapphire Oscillators Compare
-last_modified: 2024-03-27T18:35:35.957Z
+  - For Precision, The Sapphire Clock Outshines Even The Best Atomic Clocks
+last_modified: 2024-03-27T18:43:49.616Z
 hero_image: /images/cms/home/slco-8.00.png
 seo_title: Sapphire Loaded Cavity Oscillators
 nav_title: Home
