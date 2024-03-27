@@ -84,7 +84,8 @@ collections:
               - label: Teaser Image
                 name: teaser
                 widget: image
-                media_folder: /src/images/cms/
+                media_folder: /src/images/cms/home/
+                public_folder: /images/cms/home/
                 allow_multiple: false
                 choose_url: false
               - label: Link

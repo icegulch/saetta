@@ -15,10 +15,11 @@ hero_image: /images/cms/home/slco-8.00.png
 hero_heading: Sapphire Loaded Cavity Oscillators
 plugs:
   - title: This is a Test
-    blurb: This code will generate the page section only if either **variable1** or
+    blurb:
+      This code will generate the page section only if either **variable1** or
       **variable2** is present or evaluates to true. If both variable1 and
       variable2 are absent or evaluate to false, the section will not be
       generated.
     link: https://google.com
-    teaser: /src/images/cms/434060991_452503597116511_3648362896687229296_n.jpg
+    teaser: /images/cms/home/434060991_452503597116511_3648362896687229296_n.jpg
 ---
