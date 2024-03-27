@@ -95,6 +95,19 @@ collections:
             name: about_blurb
             widget: markdown
             editor_components: []
+            buttons:
+              [
+                bold,
+                italic,
+                link,
+                heading-two,
+                heading-three,
+                heading-four,
+                heading-five,
+                heading-six,
+                bulleted-list,
+                numbered-list,
+              ]
             modes: [rich_text]
             required: true
 
@@ -115,7 +128,6 @@ collections:
             collapsed: true
             minimize_collapsed: false
             allow_add: false
-            # add_to_top: true
             summary: "{{title}}"
             fields:
               - { label: Product Title, name: title, widget: string }
@@ -124,9 +136,9 @@ collections:
                   name: description,
                   widget: markdown,
                   minimal: true,
+                  editor_components: [],
                   buttons: [bold, italic, link],
                   modes: [rich_text],
-                  editor_components: [],
                   required: true,
                 }
               - label: Photo
@@ -184,6 +196,19 @@ collections:
             name: body
             widget: markdown
             editor_components: []
+            buttons:
+              [
+                bold,
+                italic,
+                link,
+                heading-two,
+                heading-three,
+                heading-four,
+                heading-five,
+                heading-six,
+                bulleted-list,
+                numbered-list,
+              ]
             modes: [rich_text]
             required: true
 
@@ -201,6 +226,7 @@ collections:
             name: body
             widget: markdown
             editor_components: []
+            buttons: [bold, italic, link]
             modes: [rich_text]
             required: true
 
@@ -218,6 +244,7 @@ collections:
             name: body
             widget: markdown
             editor_components: []
+            buttons: [bold, italic, link]
             modes: [rich_text]
             required: true
 
@@ -235,6 +262,7 @@ collections:
             name: body
             widget: markdown
             editor_components: []
+            buttons: [bold, italic, link]
             modes: [rich_text]
             required: true
 
@@ -270,7 +298,7 @@ collections:
         name: body
         widget: markdown
         minimal: true
-        buttons: [bold, italic]
         modes: [rich_text]
         editor_components: []
+        buttons: [bold, italic]
         required: true
