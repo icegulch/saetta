@@ -55,18 +55,18 @@ nav_title: Home
             </li>
           {% endfor %}
         {% endif %}
-        {% if featured_lab_posts %}
-          {% for item in featured_lab_posts %}
-            {% assign thisPost = collections.posts | where: 'data.title', item | first %}
+        {% assign labPosts = collections.posts | where: 'data.homepage' %}
+        {% if labPosts %}
+          {% for item in labPosts %}
             <li class="post">
-              <a href="{{ thisPost.data.link }}">
-                <img src="{{ prefix.postcover }}{{ thisPost.data.teaser }}" width="592" height="333" alt="{{ thisPost.data.title }}" loading="lazy">
+              <a href="{{ item.data.link }}">
+                <img src="{{ prefix.postcover }}{{ item.data.teaser }}" width="592" height="333" alt="{{ item.data.title }}" loading="lazy">
               </a>
               <div class="spacing--content">
                 <h2 style="margin-bottom:0.45rem;">
-                  {{ thisPost.data.title }}
+                  {{ item.data.title }}
                 </h2>
-                {{ thisPost.templateContent }}
+                {{ item.templateContent }}
                 <p style="margin-top:0.45rem">
                   <a href="{{ thisPost.data.link }}">
                     Read more

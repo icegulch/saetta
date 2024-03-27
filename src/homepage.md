@@ -1,9 +1,6 @@
 ---
 layout: homepage
 hero_subheading: Whispering gallery mode 8.0GHz to 12.0GHz
-featured_lab_posts:
-  - See where Sapphire Oscillators Compare
-  - For Precision, The Sapphire Clock Outshines Even The Best Atomic Clocks
 about_blurb: >
   Saetta, or **/sa’et.ta/** is an old Italian word meaning “lightning” or
   “quick”.
