@@ -33,6 +33,7 @@ collections:
             name: og_img
             widget: image
             media_folder: /src/images/cms/og/
+            public_folder: /images/cms/og/
             allow_multiple: false
             choose_url: false
             hint: Preview image shown in social media shares
@@ -50,6 +51,7 @@ collections:
             name: hero_image
             widget: image
             media_folder: /src/images/cms/home/
+            public_folder: /images/cms/home/
             allow_multiple: false
             choose_url: false
           - label: Hero Heading
@@ -90,6 +92,9 @@ collections:
                 choose_url: false
               - label: Link
                 name: link
+                widget: string
+              - label: Link Text
+                name: link_text
                 widget: string
           - label: About the Company
             name: about_blurb
@@ -145,6 +150,7 @@ collections:
                 name: photo
                 widget: image
                 media_folder: /src/images/cms/products/
+                public_folder: /images/cms/products/
                 allow_multiple: false
                 choose_url: false
               - label: Datasheet
@@ -158,6 +164,7 @@ collections:
                 name: plot_image
                 widget: image
                 media_folder: /src/images/cms/products/
+                public_folder: /images/cms/products/
                 allow_multiple: false
                 choose_url: false
               - {
@@ -289,6 +296,9 @@ collections:
         choose_url: false
       - label: Link
         name: link
+        widget: string
+      - label: Link Text
+        name: link_text
         widget: string
       - label: Show on Homepage?
         name: homepage

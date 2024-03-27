@@ -12,11 +12,13 @@ layout: base
             <img src="{{ prefix.postcover }}{{ post.data.teaser }}" width="592" height="333" alt="{{ post.data.title }}" loading="lazy">
           </a>
           <div class="spacing--content">
-            <h2 style="margin-bottom:0.45rem;">{{ post.data.title }}</h2>
+            <h2 style="margin-bottom:0.45rem;">
+              {{ post.data.title }}
+            </h2>
             {{ post.templateContent }}
-            <p style="margin-top:0.45rem;">
+            <p style="margin-top:0.45rem">
               <a href="{{ post.data.link }}">
-                Read full article
+                {{ post.data.link_text}}
               </a>
             </p>
           </div>
