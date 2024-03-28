@@ -86,7 +86,7 @@ body {
 }
 
 .brand {
-  display: block;
+  display: inline-block;
 }
 
 .brand svg {
@@ -657,12 +657,11 @@ h1 {
 
 .spacing--content {
   gap: 1.5rem;
-  font-size: 1.1rem;
 }
 
 .spacing--content p {
   text-align: left;
-  line-height: 1.65;
+  line-height: 1.6;
 }
 
 .spacing--content li {
