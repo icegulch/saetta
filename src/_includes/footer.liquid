@@ -1,16 +1,19 @@
 
 <div class="primary-footer container">
-  <nav class="footer-nav">
+  <div class="footer-phone">
+    <a href="tel:720-504-7467">720-504-7467</a><br>
+    <a href="mailto:sales@saettalabs.com">sales@saettalabs.com</a>
+  </div>
+  <nav class="footer-address">
     <address>
       1434 Spruce St<br>
       Boulder CO 80302<br>
     </address>
   </nav>
-  <address>
-    <a href="tel:720-504-7467">720-504-7467</a><br>
-    <a href="mailto:sales@saettalabs.com">sales@saettalabs.com</a>
-  </address>
-  <div>
-    &copy; 2023{% if site.copyright != "2023" %}{{ site.copyright | prepend: "-" }}{% endif %} {{ meta.seo_title }}
+  <div class="footer-copy">
+    <p>
+      &copy; 2023{% if site.copyright != "2023" %}{{ site.copyright | prepend: "-" }}{% endif %} {{ meta.seo_title }}
+    </p>
+    <p>This site does not track you.</p>
   </div>
 </div>

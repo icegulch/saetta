@@ -231,11 +231,13 @@ body {
   font-style: normal;
 }
 
-.footer-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  gap: 2rem;
+.footer-copy {
+  margin-top: 0.5rem;
+}
+
+.footer-copy p:last-child {
+  font-size: 0.9rem;
+  color: rgba(255,255,255, 0.7);
 }
 
 @media screen and (min-width: 768px) {
@@ -245,16 +247,8 @@ body {
     align-items: start;
     gap: 2rem;
   }
-  .footer-nav {
-    flex: 1;
-    order: 2;
-    justify-content: center;
-  }
-  .primary-footer>address {
-    order: 1;
-  }
-  .primary-footer>div {
-    order: 3;
+  .footer-copy {
+    margin-top: 0;
   }
 }
 
