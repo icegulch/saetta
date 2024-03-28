@@ -662,6 +662,7 @@ h1 {
 .spacing--content p {
   text-align: left;
   line-height: 1.65;
+  font-size: 1.2rem;
 }
 
 .spacing--content li {
@@ -681,6 +682,7 @@ h1 {
 @media screen and (min-width: 768px) {
   .spacing--content p {
     text-align: justify;
+    font-size: 1.05rem;
     line-height: 1.5;
   }
 }
