@@ -58,6 +58,7 @@ body {
   grid-template-rows: auto 1fr auto;
   font-family: var(--ff-sans);
   text-rendering: optimizeSpeed;
+  font-size: 17px;
   line-height: 1;
   overflow-x: hidden;
 }
@@ -468,14 +469,11 @@ body {
 
 .contact-form label {
   display: block;
-  letter-spacing: 0.25em;
   margin: 0 0 8px;
 }
 
 .contact-form label {
-  font-size: 0.7rem;
-  font-weight: 500;
-  text-transform: uppercase;
+  font-weight: 600;
 }
 
 
@@ -662,7 +660,7 @@ h1 {
 }
 
 .spacing--content p {
-  text-align: justify;
+  text-align: left;
   line-height: 1.5;
 }
 
@@ -678,6 +676,13 @@ h1 {
 
 .spacing--content p + :is(h2,h3,h4,h5,h6) {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .spacing--content p {
+    text-align: justify;
+    line-height: 1.65;
+  }
 }
 
 
