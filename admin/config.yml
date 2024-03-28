@@ -96,6 +96,7 @@ collections:
               - label: Link Text
                 name: link_text
                 widget: string
+                required: false
           - label: About the Company
             name: about_blurb
             widget: markdown
@@ -300,6 +301,7 @@ collections:
       - label: Link Text
         name: link_text
         widget: string
+        required: false
       - label: Show on Homepage?
         name: homepage
         widget: boolean
