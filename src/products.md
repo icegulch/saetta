@@ -6,7 +6,7 @@ seo_title: Products
 products:
   - title: 8.0GHz / 10.0GHz / 10.24GHz Sapphire Loaded Cavity Oscillator
     photo: /images/cms/products/slco-8.00.png
-    datasheet: /pdfs/saetta-slco-datasheet-v1.0.pdf
+    datasheet: /src/pdfs/saetta-slco-datasheet-v1.0.pdf
     description: >-
       This highly integrated X-band oscillator operates fundamentally at 8.0GHz,
       10.0GHz or 10.24GHz, is thermally stabilized and phase lockable to 10MHz.

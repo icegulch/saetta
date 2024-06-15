@@ -14,7 +14,7 @@ layout: base
             {{ product.title }}
           </h2>
           {{ product.description | markdownify }}
-          <a href="{{ product.datasheet }}" target="_blank" class="readmore">
+          <a href="{{ product.datasheet | replace: "/src", "" }}" target="_blank" class="readmore">
             Datasheet
             <svg>
               <use xlink:href='#r-arrow' />
