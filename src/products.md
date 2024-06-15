@@ -26,5 +26,5 @@ products:
 
 
       **Coming soon: 10.00GHz, 10.24GHz and 12.00GHz**
-last_modified: 2024-06-15T19:27:09.017Z
+last_modified: 2024-06-15T20:54:41.294Z
 ---
