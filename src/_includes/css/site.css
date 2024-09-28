@@ -51,29 +51,25 @@ html, body {
 }
 
 body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-areas: 'header' 'main' 'footer';
-  grid-template-rows: auto 1fr auto;
   font-family: var(--ff-sans);
   text-rendering: optimizeSpeed;
   font-size: 17px;
   line-height: 1;
-  overflow-x: hidden;
-}
-
-.site-header {
-  grid-area: header;
 }
 
 .site-main {
-  grid-area: main;
+  overflow-x: clip;
 }
 
 .site-footer {
+  margin-top: auto;
   padding-block: 1.5rem 3rem;
-  grid-area: footer;
   background-color: var(--clr-slate-700);
   color: white;
 }
