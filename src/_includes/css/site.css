@@ -266,24 +266,43 @@ body {
 }
 
 .highlight-bg {
-  position: relative;
-  background-color: #f1f5f9;
+  background-color: var(--clr-light-gray);
 }
 
-.highlight-bg--curve:after {
+.wave {
+  display: block;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: -1;
+  height: 40px;
+  width: 100%;
+  background: var(--clr-light-gray);
+  transform: scale(1,1);
+}
+
+.wave:before {
   content: "";
   display: block;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-  height: 32px;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
   background-color: white;
-  background-image: url('/images/bg-wave.svg');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  right: -25%;
+  top: 20px;
+}
+
+.wave:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+  width: 100%;
+  height: 300px;
+  background-color: var(--clr-light-gray);
+  left: -25%;
+  top: -240px;
+  clip-path: ellipse(100% 15% at -15% 100%);
 }
 
 .page-title {
@@ -293,7 +312,7 @@ body {
 
 .page-title.highlight-bg {
   margin-bottom: 0;
-  padding-block: 3rem calc(3rem + 32px);
+  padding-block: 3rem calc(3rem - 30px);
 }
 
 @media screen and (min-width: 768px) {
@@ -484,7 +503,7 @@ body {
 }
 
 .section--home {
-  padding-bottom: calc(3rem + 32px);
+  padding-bottom: calc(3rem - 30px);
 }
 
 .section:last-of-type {
@@ -723,22 +742,6 @@ h1 {
       opacity: 1;
       -webkit-transform: translateX(0%);
       transform: translateX(0%);
-    }
-  }
-
-  .fade-in-all {
-    animation: fadeIn 0.5s;
-  }
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0.25;
-      transform: rotateY(-10deg);
-    }
-
-    to {
-      opacity: 1;
-      transform: rotateY(0deg);
     }
   }
 

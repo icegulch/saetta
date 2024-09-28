@@ -5,11 +5,12 @@ hero_heading: Sapphire Loaded Cavity Oscillators
 hero_subheading: Whispering gallery mode 8.0GHz to 12.0GHz
 plugs:
   - title: Introducing... Sapphire Loaded Cavity Oscillators from Saetta Labs
-    blurb: The revolutionary Sapphire Oscillator is a quantum leap in timekeeping
+    blurb:
+      The revolutionary Sapphire Oscillator is a quantum leap in timekeeping
       technology.  Blending state of the art materials and cutting-edge
       engineering, our Sapphire Oscillator re-defines ultra low phase noise.
     teaser: /images/cms/home/screenshot-2024-03-27-at-3.58.24-pm.png
-    link: https://saettalabs.com/products/#
+    link: https://saettalabs.com/products/
     link_text: Read more
 about_blurb: >-
   ## Core Technology

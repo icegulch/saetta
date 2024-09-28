@@ -34,10 +34,11 @@
     <main class="site-main">
       {% unless page.url == '/' %}
         <h1 class="page-title highlight-bg highlight-bg--curve">
-          <div class="container container--squeezed fade-in-all">
+          <div class="container container--squeezed">
             {{ seo_title }}
           </div>
         </h1>
+        <div class="wave"></div>
       {% endunless %}
       {{ content }}
     </main>
@@ -47,13 +48,6 @@
     </footer>
 
     <script defer>
-      const homeimg = document.querySelector('#homeimg');
-      const hometxt = document.querySelector('#hometxt');
-
-      window.addEventListener('load', function (event) {
-        homeimg.classList.add('fade-in-left');
-        hometxt.classList.add('fade-in-right');
-      }); 
 
       const body = document.body;
       const primaryNav = document.querySelector('.header-nav');
@@ -72,6 +66,15 @@
         }
       });
 
+      {% if page.url == '/' %}
+      const homeimg = document.querySelector('#homeimg');
+      const hometxt = document.querySelector('#hometxt');
+    
+      window.addEventListener('load', function (event) {
+        homeimg.classList.add('fade-in-left');
+        hometxt.classList.add('fade-in-right');
+      });
+      {% endif %}
     </script>
 
   </body>
